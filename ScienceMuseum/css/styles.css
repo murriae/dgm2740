@@ -481,7 +481,7 @@ nav li.active {
 }
 nav a {
   display: block;
-  padding: .8rem 0;
+  padding: 0.8rem 0;
   /*44px min*/
   color: #eee;
   text-align: center;
@@ -495,38 +495,31 @@ main {
   display: block;
   padding: 1rem 2%;
 }
-
 main h1 {
   color: #e4c517;
   font-weight: 700;
 }
-
 main figure img {
   width: 100%;
 }
-
 main figure {
   margin: 0;
   width: 100%;
 }
-
 main figcaption {
   text-align: center;
-  font-size: .8rem;
+  font-size: 0.8rem;
 }
-
 main figure.myphoto {
   width: 50%;
   margin: 0 0 0 2%;
 }
-
 main figure.myphoto img {
   width: 100%;
 }
-
 main figure.myphoto figcaption {
   text-align: center;
-  font-size: .75rem;
+  font-size: 0.75rem;
 }
 
 footer {
