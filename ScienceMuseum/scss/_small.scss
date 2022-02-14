@@ -16,9 +16,8 @@ body {
   font-family: $fontFamily;
   font-size: 16px;
 }
-
+div#headerWrapper {background-color: $primaryColor;}
 header {
-  background-color: $primaryColor;
   padding: 1rem $gutter;
   h1 {
     margin: 0;
@@ -32,8 +31,9 @@ header {
   } //end of h2
 } //end of header
 
+div#navWrapper {background-color: #111;}
 nav {
-  background-color: #111;
+  
   ul {
     margin: 0;
     padding: 0;
@@ -55,12 +55,16 @@ nav {
     background-color: #444;
   }
 } //end nav
+
+div#mainWrapper {background-color: red;}
 main {
+    background-color: white;
   display: block;
   padding: 1rem $gutter;
   h1 {
     color: $primaryColor;
     font-weight: $heavyWeight;
+    margin:0; padding-top: 5rem;
   }
 
   
@@ -86,8 +90,10 @@ main {
     font-size: 0.75rem;
   }
 } //end main
+
+div#footerWrapper { background-color: $primaryColor;}
 footer {
-  background-color: $primaryColor;
+ 
   text-align: center;
   padding: 1rem $gutter;
 }

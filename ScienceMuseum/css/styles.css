@@ -451,8 +451,11 @@ body {
   font-size: 16px;
 }
 
-header {
+div#headerWrapper {
   background-color: #e4c517;
+}
+
+header {
   padding: 1rem 2%;
 }
 header h1 {
@@ -466,9 +469,10 @@ header h2 {
   font-weight: 300;
 }
 
-nav {
+div#navWrapper {
   background-color: #111;
 }
+
 nav ul {
   margin: 0;
   padding: 0;
@@ -491,13 +495,20 @@ nav a:hover {
   background-color: #444;
 }
 
+div#mainWrapper {
+  background-color: red;
+}
+
 main {
+  background-color: white;
   display: block;
   padding: 1rem 2%;
 }
 main h1 {
   color: #e4c517;
   font-weight: 700;
+  margin: 0;
+  padding-top: 5rem;
 }
 main figure {
   margin: 0;
@@ -522,8 +533,11 @@ main figure.myphoto figcaption {
   font-size: 0.75rem;
 }
 
-footer {
+div#footerWrapper {
   background-color: #e4c517;
+}
+
+footer {
   text-align: center;
   padding: 1rem 2%;
 }
