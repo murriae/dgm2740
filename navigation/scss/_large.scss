@@ -4,3 +4,12 @@ header, nav, main {
 }
 
 /* NAVIGATION STUFF GOES HERE  */
+nav ul li a {
+    padding: .7rem 2rem;
+    font-size: .9rem;
+    
+}
+
+nav ul {
+    justify-content: flex-start;
+}

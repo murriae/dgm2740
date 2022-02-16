@@ -67,7 +67,7 @@ main {
     margin:0; padding-top: 5rem;
   }
 
-  
+
   figure {
     margin: 0;
     width: 100%;
@@ -90,6 +90,23 @@ main {
     font-size: 0.75rem;
   }
 } //end main
+
+/* blurring the image */
+.gfg {
+  filter: blur(5px);
+  width: 100%;
+}
+   
+/* designing title and tag line */
+.logo {
+  text-align:center;
+  position: absolute;
+  font-size: 18px;
+  top: 50px;
+  left: 27%;
+  color: white;
+}
+
 
 div#footerWrapper { background-color: $primaryColor;}
 footer {
