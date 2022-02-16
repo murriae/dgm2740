@@ -6,7 +6,10 @@
     
     
     
-    nav ul {padding-left: $gutter;}
+    nav ul {padding-left: $gutter;
+            display: flex;
+            justify-content: center;
+        }
     nav li {width:auto;}
     nav a {padding: .5rem 1rem;}
     
