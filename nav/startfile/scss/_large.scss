@@ -1,0 +1,40 @@
+header, main {
+    max-width: 1240px;
+    margin: auto;
+}
+
+header {
+    grid-template-columns: 51px auto auto ;
+}
+
+/* NAVIGATION STUFF GOES HERE  */
+nav {
+    button{display: none;}
+    justify-self: end;
+    
+    ul, ul.open {
+        position: relative;
+        display: flex;
+        background-color: transparent;
+        width: auto;
+    }//end ul
+    ul li{border:none;}
+
+    ul li a{
+        color: #333;
+        border-radius: 20px;
+        padding: .5rem 1rem;
+        margin-left: .2rem;
+        transition: all .5s ease;
+    }//end anchor
+
+    ul li a:hover {
+        background-color: #eee;
+        color: #333!important;
+
+    }
+    ul li.active a {
+        color: white;
+    }
+    
+}//end nav

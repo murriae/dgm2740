@@ -44,7 +44,7 @@
     <main>
         <h1>Products</h1>
         
-        <section class="theGallery">
+        <section class="thegallery">
             <figure><img alt="car" class="lazy" data-src="images/car01.jpg" /></figure>
             <figure><img alt="car" class="lazy" data-src="images/car02.jpg" /></figure>
             <figure><img alt="car" class="lazy" data-src="images/car03.jpg" /></figure>
@@ -64,7 +64,8 @@
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@17.6.1/dist/lazyload.min.js"></script>
     <script>var lazyLoadInstance = new LazyLoad({
-        elements_selector: ".lazy"
+        elements_selector: ".lazy",
+        threshold:0
         // Your custom settings go here
       });</script>
 </body>
