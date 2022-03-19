@@ -1,5 +1,9 @@
-header, nav, main {
+header, nav {
     max-width: 1240px;
+    margin: auto;
+}
+main {
+    max-width: 80rem;
     margin: auto;
 }
 

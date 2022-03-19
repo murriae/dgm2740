@@ -176,11 +176,12 @@ main h1 {
   font-size: 1.5rem;
   color: #156496;
   font-weight: 300; }
-main .hero {
-  width: 100%; }
-main .hero img {
-  width: 100%;
-  height: auto; }
+main .parent {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-rows: auto; }
+  main .parent p:nth-child(1) {
+    grid-column: 1 / span 2; }
 
 /* FOOTER  */
 #footerWrapper {
@@ -218,8 +219,12 @@ footer {
   nav ul li a:hover {
     background: #204d69; } }
 @media only screen and (min-width: 64rem) {
-  header, nav, main {
+  header, nav {
     max-width: 1240px;
+    margin: auto; }
+
+  main {
+    max-width: 80rem;
     margin: auto; }
 
   /* NAVIGATION STUFF GOES HERE  */ }

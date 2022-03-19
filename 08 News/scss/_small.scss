@@ -83,21 +83,6 @@ nav button {
     }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* MAIN  */
 main {
  	p {padding: .5rem 2vw; color: #333; line-height: 125%;}
@@ -107,10 +92,14 @@ main {
         color: $secondaryColor;
         font-weight: $lightWeight
     }
-    .hero {width: 100%;}
-    .hero img {
-        width: 100%;
-        height: auto;
+    
+    .parent {
+        p:nth-child(1){
+            grid-column: 1 / span 2;
+        }
+        display: grid; 
+        grid-template-columns: 1fr 2fr 1fr;
+        grid-template-rows: auto;
     }
 } // end main
 
