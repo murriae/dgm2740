@@ -1,6 +1,6 @@
 
-    header, nav, main, footer {
-        max-width: 1200px;
+    header nav, main, footer {
+        max-width: 1140px;
         margin:auto;
     }
     
@@ -14,5 +14,7 @@
     nav a {padding: .5rem 1rem;}
     
     main figure { width: 31%;}
-    
+    div.parent figure {
+        flex-basis: 18;
+    }
     div.news {column-count: 3;}

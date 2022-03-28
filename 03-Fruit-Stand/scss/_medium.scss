@@ -1,5 +1,5 @@
 
-    nav li {width: 25%; float: left;}
+    nav li {width: 25%; float: right;}
     nav ul {
         display: flex;
         justify-content: space-between;
@@ -24,9 +24,8 @@
     font-size: 0.75rem;
   }
     
-    div.news {
-        clear: both;
-        column-count: 2;
-        column-rule: 1px solid #ddd;
-    }
+div.parent figure {
+  flex-basis: 29%;
+
+}
     
