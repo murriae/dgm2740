@@ -94,16 +94,25 @@ main {
     }
     
     .parent {
+        display: grid; 
+        grid-template-columns: 25% 50% 25%;
+        grid-template-rows: auto;
         p:nth-child(1){
             grid-column: 1 / span 2;
         }
-        display: grid; 
-        grid-template-columns: 1fr 2fr 1fr;
-        grid-template-rows: auto;
+        
     }
 } // end main
 
-
+.parent {
+    display: grid; 
+    grid-template-columns: 25% 50% 25%;
+    grid-template-rows: auto;
+    p:nth-child(1){
+        grid-column: 1 / span 2;
+    }
+    
+}
 
 /* FOOTER  */
 #footerWrapper {background-color: #1b1b1b; }

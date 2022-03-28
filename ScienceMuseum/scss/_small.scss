@@ -68,10 +68,11 @@ nav {
   }
   a {
     display: block;
-    padding: 0.8rem 0; /*44px min*/
+    padding: .8rem 0; /*44px min*/
     color: #eee;
     text-align: left;
     text-decoration: none;
+    margin-left: .8rem;
   } //end of a
   a:hover {
     background-color: #444;
