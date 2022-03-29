@@ -4,17 +4,14 @@
         margin:auto;
     }
     
-    
-    
     nav ul {padding-left: $gutter;
             display: flex;
             justify-content: center;
         }
     nav li {width:auto;}
     nav a {padding: .5rem 1rem;}
-    
-    main figure { width: 31%;}
+
     div.parent figure {
-        flex-basis: 18;
+        flex-basis: 18%;
     }
-    div.news {column-count: 3;}
+    
