@@ -40,7 +40,7 @@ header {
 
 
 nav {
-  background-color: black;
+  background-color: rgb(46, 44, 44);
   ul {
     margin: 0;
     padding: 0;
@@ -58,7 +58,7 @@ nav {
     text-align: right;
     text-decoration: none;
     margin-left: .8rem;
-    background-color: black;
+   
   } //end of a
   a:hover {
     background-color: rgb(243, 169, 8);
@@ -85,7 +85,7 @@ main {
     font-size: 0.75rem;
   }
 } //end main
-
+//NOT WORKINNG
 div.parent{
   display: flex;
   flex-wrap: wrap;
