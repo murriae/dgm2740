@@ -19,34 +19,46 @@ body {
 
 header {
   padding: 1rem $gutter;
+  h1, figure.logo,  {
+    display: inline-block;
+    vertical-align: middle;
+  
+  }
   h1 {
     margin: 0;
     font-size: 1.5rem;
     font-weight: $heavyWeight;
+    
+    
   } // end of h1
   h2 {
     margin: 0;
     font-size: 1.2rem;
     font-weight: $regularWeight;
+    margin-left: 7.7rem;
   } //end of h2
   figure.logo {
+   
     width: 100px;
     margin: 0 0 0 $gutter;
   }
   figure.logo img {
+   
     width: 100px;
   }
 } //end of header
 
 
 nav {
-  background-color: rgb(46, 44, 44);
+  background-color: $menuColor;
+  
   ul {
     margin: 0;
     padding: 0;
   }
   li {
     list-style-type: none;
+    
   }
   li.active {
     background-color: rgb(252, 165, 4);
@@ -54,14 +66,16 @@ nav {
   a {
     display: block;
     padding: .8rem 0; /*44px min*/
-    color: rgb(27, 21, 21);
+    color: darken($secondaryColor, 90%);
     text-align: right;
     text-decoration: none;
-    margin-left: .8rem;
+    font-size: large;
+    
+    
    
   } //end of a
   a:hover {
-    background-color: rgb(243, 169, 8);
+    background-color:lighten($menuColor, 20%);
     text-decoration: underline;
   }
 } //end nav
@@ -74,7 +88,7 @@ main {
   h1 {
     color: $secondaryColor;
     font-weight: $heavyWeight;
-    margin:0; padding-top: 5rem;
+    margin:2%; padding-top: 5rem;
   }
   figcaption {
     text-align: center;
@@ -91,18 +105,17 @@ div.parent{
   flex-wrap: wrap;
 }
 div.parent figure{
-  flex-basis: 96%;
-  margin:1rem 2%;
+  flex-basis: 46%;
+  margin: 1rem 2%;
+ 
 }
 div.parent figure img{
-  width:46%;
+  width:100%;
   height:auto;
   
 }//end gallery
-
-div#footerWrapper { background-color: $primaryColor;}
 footer {
- 
+ background-color: $primaryColor;
   text-align: center;
   padding: 1rem $gutter;
 }
