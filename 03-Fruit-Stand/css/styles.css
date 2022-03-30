@@ -164,7 +164,7 @@ nav li { list-style-type: none; }
 
 nav li.active { background-color: #fca504; }
 
-nav a { display: block; padding: .8rem 0; /*44px min*/ color: black; text-align: right; text-decoration: none; font-size: large; }
+nav a { display: block; padding: 2rem 0; /*44px min*/ padding-right: .8rem; color: black; text-align: right; text-decoration: none; font-size: large; }
 
 nav a:hover { background-color: #d7d3d3; text-decoration: underline; }
 

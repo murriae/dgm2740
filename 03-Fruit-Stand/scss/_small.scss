@@ -64,7 +64,8 @@ nav {
   }
   a {
     display: block;
-    padding: .8rem 0; /*44px min*/
+    padding: 2rem 0; /*44px min*/
+    padding-right: .8rem;
     color: darken($secondaryColor, 90%);
     text-align: right;
     text-decoration: none;
