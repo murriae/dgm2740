@@ -92,26 +92,34 @@ main {
         color: $secondaryColor;
         font-weight: $lightWeight
     }
+    figcaption {
+        text-align: center;
+        font-size: 0.8rem;
+      }
+      figure.mypic figcaption {
+        text-align: center;
+        font-size: 0.75rem;
+      }
     
-    .parent {
-        display: grid; 
-        grid-template-columns: 25% 50% 25%;
-        grid-template-rows: auto;
-        p:nth-child(1){
-            grid-column: 1 / span 2;
-        }
-        
-    }
 } // end main
 
-.parent {
+div.parent {
     display: grid; 
     grid-template-columns: 25% 50% 25%;
     grid-template-rows: auto;
     p:nth-child(1){
         grid-column: 1 / span 2;
     }
-    
+div.parent figure{
+        flex-basis: 46%;
+        margin: 1rem 2%;
+       
+      }
+      div.parent figure img{
+        width:100%;
+        height:auto;
+        
+      }//end gallery
 }
 
 /* FOOTER  */
