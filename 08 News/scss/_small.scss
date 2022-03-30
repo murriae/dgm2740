@@ -93,6 +93,7 @@ main {
         font-weight: $lightWeight
     }
     figcaption {
+        display: block;
         text-align: center;
         font-size: 0.8rem;
       }
@@ -105,21 +106,20 @@ main {
 
 div.parent {
     display: grid; 
-    grid-template-columns: 25% 50% 25%;
+    margin: 0 2vw;
+    grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
-    p:nth-child(1){
-        grid-column: 1 / span 2;
+    span{
+        display: block;
+        text-align: center;
+        font-size: .8rem;
     }
-div.parent figure{
-        flex-basis: 46%;
-        margin: 1rem 2%;
-       
-      }
-      div.parent figure img{
-        width:100%;
-        height:auto;
-        
-      }//end gallery
+    .sub,.one {
+        padding:.5rem 2vw;
+    }
+  .sub img, .one img {width:100%; }
+  .one{grid-column:1/ span 2;}
+
 }
 
 /* FOOTER  */

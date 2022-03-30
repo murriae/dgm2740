@@ -8,3 +8,10 @@ main {
 }
 
 /* NAVIGATION STUFF GOES HERE  */
+div.parent {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    .one{
+        grid-column: 1 / span 3;
+        grid-row: 1 / span 2;
+    }
+}
