@@ -121,13 +121,28 @@ div.parent {
   .one{grid-column:1/ span 2;}
 
 }
+div.footer {
+    display: grid; 
+    margin: 0 2vw;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    h1, p {
+        color: rgb(250, 244, 244);
+        text-align: left;
+        font-size: 1rem;
+        padding: .5rem; 
+    }
+    .sub,.one {
+        padding:.5rem 2vw;
+    }
+}
 
 /* FOOTER  */
-#footerWrapper {background-color: #1b1b1b; }
 footer {
     font-size: .85rem;
 	padding: 1rem 0;
 	color: #bbb;
 	text-align: center;
 	a{color: #eee;}
+    background-color: $menuColor; 
 }
