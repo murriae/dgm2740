@@ -1,0 +1,181 @@
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+
+/*----------- apply a natural box layout model to all elements --------------*/
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+
+/*----------- BODY --------------*/
+body {
+    font-size: 16px;
+    font-family: Verdana, sans-serif;
+}
+
+
+/*----------- HEADER --------------*/
+div#headerWrapper {
+    background-image: url(../images/header1-assets/header-small.jpg);
+    height: 140px;
+}
+header {
+    padding: 4rem 2%;
+    color: white;
+    
+}
+
+header h1 {margin: 0;
+background-color:rgba(34, 33, 33, 0.301);}
+header h2 {margin: 0; font-weight: normal;
+    background-color:rgba(34, 33, 33, 0.301);}
+
+/*----------- NAVIGATION --------------*/
+nav {
+      ul {
+    display: none;
+    
+    padding: 0;
+    margin: 0;
+}
+    ul li {
+    float: left;
+    width: 25%;
+}
+    ul li a {
+    display: block;
+    background-color: #444;
+    color: #eee;
+    border-left: 1px solid #777;
+    padding: .5rem 0;
+    text-decoration: none;
+    font-size: .9rem;
+    text-align: center;
+}
+    ul li:first-child a {border-left: none;}
+
+    ul li a:hover {
+    background-color: #eee;
+    color: #333;
+}
+    ul li.active a {
+    background-color: #000;
+    color: #fff;
+}
+}
+#navWrapper {background-color: $menuColor;}
+
+ nav button {
+    position: relative;
+    height: 44px;
+    width: 44px;
+    background: none;
+    border: none;
+    .line {
+        position: absolute;
+        height: 2px;
+        width: 60%;
+        left: 20%;
+        background-color: white;
+        transition: all .3s ease;
+    }
+    .top {top: 29%;}
+    .middle{top:48%;}
+    .bottom{top: 67%;}
+}//end button
+
+#hamburgerBtn.open {
+    .top {
+        transform: rotate(45deg);
+        top: 48%;
+    }
+    .middle, .bottom {
+        transform: rotate(-45deg);
+        top:48%;}
+}
+
+/*----------- MAIN --------------*/
+main {
+    padding: 0 2%;
+    min-height: 10rem;
+
+    $cbr: 10px;
+    .card-deck {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .card{
+        flex-basis:100%;
+        border: 1px solid rgb(216, 209, 209);
+        border-radius:  $cbr;
+        margin: 1rem 0;
+        text-align: center;
+        section {
+            background-color: #444;
+            color: #eee;
+            padding: 1rem 1%;
+            border-top-left-radius: $cbr - 1;
+            border-top-right-radius: $cbr - 1;
+        }//end of card
+        img {
+            padding: 1rem;
+        }//end of image
+        p {padding: 1rem 2vw;}
+        a {
+            display: block;
+            background-color: crimson;
+            color: white;
+            padding: 1rem 0;
+            margin: 1rem 4vw;
+            border-radius: $cbr;
+        }
+        a:hover{background-color: lighten(crimson, 10%);}
+    }//end of section
+
+    div.test {
+        width: 3rem;
+        border: 1px solid black;
+        text-align: center;
+        position: relative;
+        animation: button 5s 2;
+    }//end test 
+    @keyframes button {
+        0% {left: 0px;}
+        100% {left: 200px;}
+    }//end keyframes
+    figure img.rotate{
+        position: relative;
+        animation: mymoves 5s 1;
+    }
+    @keyframes mymoves {
+        0% {transform:rotate(0deg);}
+        100% {transform:rotate(360deg);}
+    }
+
+    figure img.forge{
+        position: relative;
+        animation: forge 5s 1;
+    }
+    @keyframes forge {
+        0% {left:0px;transform:rotate(0deg);}
+        45% {left:100%; transform:roate(0deg);}
+        55%{left: 100%; transform: rotate(180deg);}
+        100% {left: 0%;transform:rotate(180deg);}
+    }
+}
+
+
+
+/*----------- FOOTER --------------*/
+footer {
+    background-color: #ddd;
+    padding: .5rem 2%;
+    text-align: center;
+}
+
+
+
+/*----- Clearfix: Force an Element not to collapse -----*/
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}

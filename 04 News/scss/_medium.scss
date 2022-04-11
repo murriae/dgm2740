@@ -1,0 +1,29 @@
+
+
+
+/*----------- BODY --------------*/
+
+
+
+/*----------- HEADER --------------*/
+div#headerWrapper {
+    background-image: url(../images/header1-assets/header-medium.jpg);
+    height: 240px;
+}
+
+
+/*----------- NAVIGATION --------------*/
+    nav ul {margin-left: 2%;}
+    nav ul li {width: auto;}
+    nav ul li:first-child a {border-left: 1px solid #777;}
+    nav ul li:last-child a {border-right: 1px solid #777;}
+    nav ul li a{padding: .5rem 1rem;}
+
+
+/*----------- MAIN --------------*/
+
+main {
+    .card{flex-basis:48%;}
+}
+/*----------- FOOTER --------------*/
+    
