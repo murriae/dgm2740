@@ -1,0 +1,37 @@
+
+nav button {display: none;}
+#primaryNav {display:flex;}
+nav {
+    display: flex;
+    justify-items: left;
+}
+
+    main figure {
+        float: right; 
+        width: 48%; 
+        margin-left: 2%;
+        padding-bottom: .5rem;
+    }
+
+    figure.myphoto {
+      margin:0;
+      padding-right: 0;
+    }  
+  figure.mypic {
+    width: 50%;
+    margin: 0 0 0 $gutter;
+  }
+  figure.mypic img {
+    width: 50%;
+  }
+  figure.mypic figcaption {
+    text-align: center;
+    font-size: 0.75rem;
+  }
+    
+    div.news {
+        clear: both;
+        column-count: 2;
+        column-rule: 1px solid #ddd;
+    }
+    

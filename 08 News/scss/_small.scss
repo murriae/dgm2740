@@ -16,7 +16,7 @@ body {
 /* HEADER  */
 header {
     display: grid;
-    grid-template-columns: 51px auto;
+    
     align-items: center;
 	padding: .5rem 2vw;
 	h1 {
@@ -48,7 +48,7 @@ nav {
     ul li a:hover {
         background-color: rgba(0,0,0,.5);
     }
-    ul.open{display:block}
+    ul.open{display:block;}
 }
 
 #navWrapper {background-color: $menuColor;}

@@ -1,16 +1,14 @@
-/*navigation rules here*/
-nav {background-color: rgb(46, 44, 44);}
-nav ul {margin: 0; padding:0;}
-nav li{list-style-type: none;}
-nav li.active { background-color:rgb(82, 70, 51);}
-nav a {
-    display: block;
-    padding: .8rem; /*44 min height*/
-    color: #eee;
-    text-align: left;
-    text-decoration: none;
-}
 
-nav a:hover {
-    background-color: rgb(94, 83, 83);
-}
+/* HEADER  */
+header {
+    display: grid;
+    
+    align-items: center;
+	padding: .5rem 2vw;
+	
+        font-size: 3rem;
+        font-weight: bold;
+        padding-left: 1rem;
+        color: rgb(238, 40, 228);
+        justify-content: center;    
+} 

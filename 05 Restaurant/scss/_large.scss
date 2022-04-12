@@ -1,0 +1,26 @@
+
+    header, nav, main {
+        max-width: 1200px;
+        margin:auto;
+    }
+    footer {
+        max-width: 75rem;
+    }
+    
+    
+    
+    nav ul {padding-left: $gutter;
+            display: flex;
+            justify-content: center;
+        }
+    nav li {width:auto;}
+    nav a {padding: .5rem 1rem;}
+
+    figure.myphoto {
+        margin:0;
+        padding-right: 0;
+    }
+    
+    main figure { width: 31%;}
+    
+    div.news {column-count: 3;}

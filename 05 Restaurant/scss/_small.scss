@@ -1,0 +1,174 @@
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+/*----------- apply a natural box layout model to all elements --------------*/
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* body rules */
+body {
+  font-family: $fontFamily;
+  font-size: 16px;
+}
+div#headerWrapper {background-color: $primaryColor;}
+header {
+  padding: 3.2rem $gutter;
+  background-color: white;
+ 
+  h1 {
+    margin: 0;
+    font-size: 2rem;
+    font-weight:bolder;
+    padding: .5rem;
+    color:  rgb(167, 17, 17);
+  } // end of h1
+  h2 {
+    margin: 0;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: rgb(48, 38, 136);
+  } //end of h2
+  
+  figure.logo {
+    width: 100px;
+    margin: 0 0 0 $gutter;
+    float: left;
+    margin: 0;    
+  }
+  figure.logo img {
+    width: 100px;
+    margin-bottom: 10%;
+
+  }
+} //end of header
+
+.header img {
+  float: left;
+  width: 100px;
+  height: 25px;
+  background: #555;
+}
+
+.header h1 {
+  position: relative;
+  top: 18px;
+  left: 10px;
+}
+
+nav {
+  
+  ul {
+    display:none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  li {
+    list-style-type: none;
+  }
+  li.active a{
+    background-color: rgb(48, 38, 136);
+  }
+  a {
+    display: block;
+    padding: .8rem 0; /*44px min*/
+    color: #eee;
+    text-align: left;
+    text-decoration: none;
+    margin-left: .8rem;
+  } //end of a
+  a:hover {
+    background-color: lighten(rgb(167, 17, 17), 7%);
+  }
+  ul li a {
+    display: block;
+    padding: .75rem 2vw;
+    font-size: 1.1rem;
+    color:white;
+    text-decoration: none;
+    border-top: 1px solid rgba(0,0,0,.2);
+}
+
+  ul.open{display:block;}
+
+}
+
+div#navWrapper {background-color: rgb(167, 17, 17);}
+nav button {
+  position: relative;
+  height: 44px;
+  width: 44px;
+  background: none;
+  border: none;
+  .line {
+      position: absolute;
+      height: 2px;
+      width: 60%;
+      left: 20%;
+      background-color: white;
+      transition: all .3s ease;
+  }
+  .top {top: 29%;}
+  .middle{top:48%;}
+  .bottom{top: 67%;}
+}//end button
+
+
+#hamburgerBtn.open {
+  .top {
+      transform: rotate(45deg);
+      top: 48%;
+  }
+  .middle, .bottom {
+      transform: rotate(-45deg);
+      top:48%;
+  }
+} //end nav
+
+div#mainWrapper {background-color: rgb(250, 249, 249);}
+main {
+    background-color: white;
+  display: block;
+  padding: 2rem $gutter;
+  h1 {
+    color: rgb(48, 38, 136);
+    font-weight: $heavyWeight;
+    margin:0; 
+    padding-top: .5rem;
+  }
+
+  figure.myphoto {
+    width: 100%;
+    margin: 0;   
+  }
+  figure.myphoto img {
+    width: 100%;
+  }
+  figure.mypic {
+    width: 50%;
+    padding: 0;
+    
+  }
+  figure.mypic img {
+    width: 100%;
+    
+  }
+  figure.mypic figcaption {
+    text-align: center;
+    font-size: 1.4rem;
+  }
+} //end main
+
+
+div#footerWrapper { background-color: $primaryColor;}
+footer {
+ 
+  text-align: center;
+  padding: 1rem $gutter;
+}
