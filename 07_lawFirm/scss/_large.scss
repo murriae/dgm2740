@@ -16,7 +16,11 @@ header, nav, main, footer {
 
 
 /*----------- MAIN --------------*/
-
+/*----------- COLUMN --------------*/
+@for $i from 1 through 12 {
+        $w:($i/12) * 100%;
+        .larg-#{$i} {flex-basis: $w;}
+    }//end loop
 
 
 /*----------- FOOTER --------------*/

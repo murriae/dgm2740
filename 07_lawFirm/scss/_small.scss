@@ -59,7 +59,36 @@ main {
     min-height: 10rem;
 }
 
+div.social {
+    background-color: black;
+    display:flex;
+    padding: 1rem 0;
+}
+div.social a {
+    flex-basis: 25%;
+    text-align: center;
+    color: white;
+    font-size: 3rem;
+    text-decoration: none;
+}
+div.social a:hover{color:orange;}
 
+
+/*-----------COLUMNS--------------*/
+div.flexed {display:flex; 
+    flex-wrap: wrap;}
+    //end parent
+.column {padding: 0 $gutter;}
+@for $i from 1 through 12 {
+    $w:($i / 12) * 100%;
+    .small-#{$i} {flex-basis: $w;}
+}//end loop
+
+.jumbotron {
+    background-color: red;
+    color: white;
+    p{font-size:200%; padding: 2rem 0;}
+}
 /*----------- FOOTER --------------*/
 footer {
     background-color: #ddd;
