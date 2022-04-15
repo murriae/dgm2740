@@ -1,30 +1,83 @@
-
-
-
 /*----------- BODY --------------*/
 
-
-
 /*----------- HEADER --------------*/
+#headerWrapper {
+  border-top: 1px solid red;
+}
+header {
+  grid-template-columns: 51px auto auto;
 
-
+  div#phone {
+    display: block;
+    justify-self: end;
+    a {
+      color: $secondaryColor;
+      text-decoration: none;
+      font-weight: $normalWeight;
+      font-size: 1.5rem;
+    } //end anchor
+    a:hover {
+      color: $primaryColor;
+    }
+  } //end phone
+}
 
 /*----------- NAVIGATION --------------*/
-    nav ul {margin-left: 2%;}
-    nav ul li {width: auto;}
-    nav ul li:first-child a {border-left: 1px solid #777;}
-    nav ul li:last-child a {border-right: 1px solid #777;}
-    nav ul li a{padding: .5rem 1rem;}
+nav ul {
+  margin-left: 2%;
+}
+nav ul li {
+  width: auto;
+}
+nav ul li:first-child a {
+  border-left: 1px solid #777;
+}
+nav ul li:last-child a {
+  border-right: 1px solid #777;
+}
+nav ul li a {
+  padding: 0.5rem 1rem;
+}
 
+div#hamburger,
+div#closex {
+  display: none;
+}
+nav {
+  height: auto;
+  ul {
+    display: flex;
+    justify-content: end;
+    border: none;
+  }
+} //end nav
+
+//structure
+div#headerWrapper {
+  grid-row-start: 1;
+}
+div#navWrapper {
+  grid-row-start: 2;
+}
+div#mainWrapper {
+  grid-row-start: 3;
+}
+div#footerWrapper {
+  grid-row-start: 4;
+}
 
 /*----------- MAIN --------------*/
-
-
+.cards {
+  display: grid; 
+  grid-template-rows: auto;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
 /*----------- COLUMN --------------*/
 @for $i from 1 through 12 {
-    $w:($i/12) * 100%;
-    .medium-#{$i} {flex-basis: $w;}
-}//end loop
+  $w: ($i/12) * 100%;
+  .medium-#{$i} {
+    flex-basis: $w;
+  }
+} //end loop
 
 /*----------- FOOTER --------------*/
-    

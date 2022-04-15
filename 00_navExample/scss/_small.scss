@@ -1,0 +1,91 @@
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+
+/*  apply a natural box layout model to all elements  */
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+/* BODY  */
+body {
+    display: grid;
+	font-family: $defaultFont;
+	font-size: 16px;
+	font-weight: $lightWeight;
+    min-width: 320px;
+}
+
+
+/* HEADER  */
+div#headerWrapper {grid-row-start: 1;}
+header {
+    display: grid;
+    grid-template-columns: 51px auto 44px;
+    align-items: center;
+	padding: .5rem 2vw;
+	h1 {
+        font-size: 1.6rem;
+        font-weight: $lightWeight;
+        padding-left: .5rem;
+        color: $primaryColor;
+    }
+    div#phone {display:none;}
+} // end header
+
+
+
+/* NAVIGATION STUFF GOES HERE  */
+div#navWrapper {grid-row-start: 4;}
+div#hamburger a, div#closex a {
+    display: block;
+    padding: .8rem 2vw;
+    font-size: 1.5rem;
+    color: black;
+    text-decoration: none;
+    text-align: right;
+}//end nav buttons
+div#closex a {margin-right: 2vw;}
+nav {
+    height: 100vh;
+    ul {border-bottom: 1px solid #eee;}
+    ul li {border-top: 1px solid #eee;}
+    ul li a {
+        display: block;
+        color:#333;
+        padding: .9rem 2vw;
+        text-decoration: none;
+        text-align: right;
+    }//end anchors
+}//end nav
+
+
+
+/* MAIN  */
+div#mainWrapper {grid-row-start: 2;}
+main {
+ 	p {padding: .5rem 2vw; color: #333; line-height: 125%;}
+	h1 {
+        padding: 1rem 2vw .5rem 2vw; 
+        font-size: 1.5rem; 
+        color: $secondaryColor;
+        font-weight: $lightWeight
+    }
+    .hero {width: 100%;}
+    .hero img {
+        width: 100%;
+        height: auto;
+    }
+    ul li a:hover {color: $primaryColor}
+    ul li.active a {background-color: lighten($primaryColor, 45%);}
+} // end main
+
+
+
+/* FOOTER  */
+#footerWrapper {background-color: #1b1b1b;
+grid-row-start: 3; }
+footer {
+    font-size: .85rem;
+	padding: 1rem 0;
+	color: #bbb;
+	text-align: center;
+	a{color: #eee;}
+}

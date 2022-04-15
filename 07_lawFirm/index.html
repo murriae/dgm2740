@@ -1,78 +1,279 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-<head>
-<meta charset="utf-8">
-<meta name="description" content="Fill Me In">
-<meta name="author" content="John Doe">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="description" content="Fill Me In" />
+    <meta name="author" content="John Doe" />
 
-<!-- This start file was build by Paul Cheney  -->
-<title>HTML5 Start Site by Paul Cheney</title>
+    <!-- This start file was build by Paul Cheney  -->
+    <title>07 Law Firm</title>
 
-<!-- TELLS PHONES NOT TO LIE ABOUT THEIR WIDTH & stops the font from enlarging when a phone is turned sideways-->
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <!-- TELLS PHONES NOT TO LIE ABOUT THEIR WIDTH & stops the font from enlarging when a phone is turned sideways-->
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1"
+    />
 
-<!-- FONT AWESOME OLD LINK -->
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
-<script src="https://kit.fontawesome.com/f9c9f462e1.js" crossorigin="anonymous"></script>
-<!-- STYLE SHEETS -->
-<link href="css/styles.css" rel="stylesheet">
+    <!-- FONT AWESOME OLD LINK -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.0.10/css/all.css"
+      integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://kit.fontawesome.com/f9c9f462e1.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- STYLE SHEETS -->
+    <link href="css/styles.css" rel="stylesheet" />
 
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Spline+Sans:wght@300;500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- HEADER HERE -->
+    <div id="headerWrapper">
+      <header>
+        <figure class="logo">
+          <img src="images/gavel.png" alt="logo" />
+        </figure>
+        <h1>Isaac Murri & Co.</h1>
 
+        <div id="hamburger"><a href="#closex">&#9776;</a></div>
+        <div id="phone"><a href="tel:18015232396">801-523-2396</a></div>
+      </header>
+    </div>
+    <!--end header wrapper-->
 
-     
-</head>
-<body>
-<!-- HEADER HERE -->
-	<header>
- <h1>Company Name Here</h1>
-        <h2>Possible Slogan or Tagline</h2>
-    </header>
-    
-    
-<!-- NAVIGATION HERE -->
-    <nav class="clearfix">
-        <ul >
-            <li><a href="#">Home</a></li>
-            <li class="active"><a href="#">Products</a></li>
-            <li><a href="#">Location</a></li>
-            <li><a href="#">Contact</a></li>    
+    <!-- NAVIGATION HERE -->
+    <div id="navWrapper">
+      <nav class="clearfix">
+        <div id="closex"><a href="#hamburger">x</a></div>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li class="active"><a href="#">Attorneys</a></li>
+          <li><a href="#">Practices</a></li>
         </ul>
-    </nav>
-    
-    
-<!-- CONTENT HERE -->
-    <main>
-        <h1>Products</h1>
-        <p>The page name should almost exactly match the menu item. </p>
-       <div class="flexed">
-           <div class="medium-2"></div>
-            <div class="column small-12 medium-4 large-12">
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-            </div>
-            <div class="column small-12 medium-4">
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-            </div>
-            <div class="column small-12 medium-4 jumbotron">
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-            </div>
-            
-            
-            
-       </div>
-        
-        
-        <div class="social">
-            <a href="#" class="fa-brands fa-facebook-square"></a>
-            <a href="#" class="fa-brands fa-twitter-square"></a>
-            <a href="#" class="fa-brands fa-youtube-square"></a>
-            <a href="#" class="fa-solid fa-square-phone"></a>
-        </div><!--end of social-->
-    </main>
-    
-<!-- FOOTER HERE -->   
-    <footer>
-        &copy; 201x &bull; Paul Cheney &bull; 123-555-6789
-    </footer>
+      </nav>
+    </div>
+    <!-- end nav wrapper -->
 
-</body>
+    <!-- CONTENT HERE -->
+    <div id="mainWrapper">
+      <main>
+        
+        <div class="flexed card-deck">
+          <div class="large-2"></div>
+          <div class="cards">
+          <div class="small-6 medium-3 large-2 card">
+            <section>Isaac Murri</section>
+            <figure class="myphoto">
+              <img src="images/isaac.png" />
+            </figure>
+            <a href="#">Learn More</a>
+          </div>
+          <!--end of card-->
+          <div class="small-6 medium-3 large-2 card">
+            <section>George Washington</section>
+            <figure>
+              <img src="images/george.jpg" />
+            </figure>
+            <a href="#">Learn More</a>
+          </div>
+          <!--end of card-->
+          <div class="small-6 medium-3 large-2 card">
+            <section>John Adams</section>
+            <figure>
+              <img src="images/john.jpg" />
+            </figure>
+            <a href="#">Learn More</a>
+          </div>
+          <!--end of card-->
+          <div class="small-6 medium-3 large-2 card">
+            <section>Abraham Lincoln</section>
+            <figure>
+              <img src="images/abe.jpg" />
+            </figure>
+            <a href="#">Learn More</a>
+          </div>
+          <!--end of card-->
+        </div>
+        </div>
+        <!--end of all cards-->
+
+        <div class="allButtons">
+          <div class="small-6 medium-3 large-2">
+            <a href="#">
+              <button type="button">Client</button>
+            </a>
+          </div>
+          <!--end of button-->
+          <div class="small-6 medium-3 large-2">
+            <a href="#">
+              <button type="button">Your Case Review</button>
+            </a>
+          </div>
+          <!--end of button-->
+          <div class="small-6 medium-3 large-2">
+            <a href="#">
+              <button type="button">Famous Cases</button>
+            </a>
+          </div>
+          <!--end of button-->
+        </div>
+        <!--end of all buttons-->
+        <div id="blogger">
+        <div class="flexed card-blogs">
+          
+          <div class="small-6 medium-3 large-2 blog">
+            <figure class="myphoto">
+              <img src="images/isaac.png" />
+            </figure>
+            <section id="par">
+              Blog Post #1
+              <p>
+                It is a long established fact that a reader will be distracted
+                by the readable content of a page when looking at its layout.
+                The point of using Lorem Ipsum is that it has a more-or-less
+                normal distribution of letters, as opposed to using 'Content
+                here, content here', making it look like readable English. Many
+                desktop publishing packages and web page editors now use Lorem
+                Ipsum as their default model text, and a search for 'lorem
+                ipsum' will uncover many web sites still in their infancy.
+                Various versions have evolved over the years, sometimes by
+                accident, sometimes on purpose (injected humour and the like).
+              </p>
+            </section>
+            <a href="#">Read More</a>
+          </div>
+          <!--end of card-->
+          <div class="small-6 medium-3 large-2 blog">
+            <figure>
+              <img src="images/george.jpg" />
+            </figure>
+            <section>
+              Blog Post #2
+              <p id="par">
+                It is a long established fact that a reader will be distracted
+                by the readable content of a page when looking at its layout.
+                The point of using Lorem Ipsum is that it has a more-or-less
+                normal distribution of letters, as opposed to using 'Content
+                here, content here', making it look like readable English. Many
+                desktop publishing packages and web page editors now use Lorem
+                Ipsum as their default model text, and a search for 'lorem
+                ipsum' will uncover many web sites still in their infancy.
+                Various versions have evolved over the years, sometimes by
+                accident, sometimes on purpose (injected humour and the like).
+              </p>
+            </section>
+            <a href="#">Read More</a>
+          </div>
+          <!--end of card-->
+          <div class=" small-6 medium-3 large-2 blog">
+            <figure>
+              <img src="images/john.jpg" />
+            </figure>
+            <section>
+              Blog Post #3
+              <p id="par">
+                It is a long established fact that a reader will be distracted
+                by the readable content of a page when looking at its layout.
+                The point of using Lorem Ipsum is that it has a more-or-less
+                normal distribution of letters, as opposed to using 'Content
+                here, content here', making it look like readable English. Many
+                desktop publishing packages and web page editors now use Lorem
+                Ipsum as their default model text, and a search for 'lorem
+                ipsum' will uncover many web sites still in their infancy.
+                Various versions have evolved over the years, sometimes by
+                accident, sometimes on purpose (injected humour and the like).
+              </p>
+            </section>
+            <a href="#">Read More</a>
+          </div>
+          <!--end of card-->
+          <div class="small-6 medium-3 large-2 blog">
+            <figure>
+              <img src="images/abe.jpg" />
+            </figure>
+            <section>
+              Blog Post #4
+              <p id="par">
+                It is a long established fact that a reader will be distracted
+                by the readable content of a page when looking at its layout.
+                The point of using Lorem Ipsum is that it has a more-or-less
+                normal distribution of letters, as opposed to using 'Content
+                here, content here', making it look like readable English. Many
+                desktop publishing packages and web page editors now use Lorem
+                Ipsum as their default model text, and a search for 'lorem
+                ipsum' will uncover many web sites still in their infancy.
+                Various versions have evolved over the years, sometimes by
+                accident, sometimes on purpose (injected humour and the like).
+              </p>
+            </section>
+            <a href="#">Read More</a>
+          </div>
+          <!--end of card-->
+        </div>
+        </div>
+        <!--end of all cards-->
+
+        <div class="parent">
+          <div class="one">
+            <h1>Tip of the Day</h1>
+            <span
+              >The standard chunk of Lorem Ipsum used since the 1500s is
+              reproduced below for those interested. Sections 1.10.32 and
+              1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also
+              reproduced in their exact original form.</span
+            >
+            <a href="#">Read More</a>
+          </div>
+          <div class="sub1">
+              <h1>FAQ #1</h1>
+            <span
+              >The standard chunk of Lorem Ipsum used since the 1500s is
+              reproduced below for those interested.</span
+            >
+            <a href="#">Read More</a>
+          </div>
+          <div class="sub2">
+            <h1>FAQ #2</h1>
+            <span>The standard chunk of Lorem Ipsum used since the 1500s is
+            reproduced below for those interested.</span>
+            <a href="#">Read More</a>
+          </div>
+          <div class="sub3">
+            <h1>FAQ #3</h1>
+            <span>The standard chunk of Lorem Ipsum used since the 1500s is
+              reproduced below for those interested.</span>
+              <a href="#">Read More</a>
+          </div>
+        </div>
+       
+      </main>
+      
+    </div>
+   
+    <!-- end main wrapper -->
+    <!-- FOOTER HERE -->
+    <div id="footerWrapper">
+      <footer>   
+        <div class="social">
+          <a href="#" class="fa-brands fa-facebook-square"></a>
+          <a href="#" class="fa-brands fa-twitter-square"></a>
+          <a href="#" class="fa-brands fa-youtube-square"></a>
+          <a href="#" class="fa-solid fa-square-phone"></a>
+        </div>
+        <!--end of social-->    
+        &copy; 2022 &bull; Isaac Murri & Co &bull; 801-523-2396
+      </footer>
+    </div>
+    <!-- end footer wrapper -->
+  </body>
 </html>

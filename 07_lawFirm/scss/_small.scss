@@ -13,35 +13,63 @@ body {
 
 
 /*----------- HEADER --------------*/
+div#headerWrapper {grid-row-start: 1;}
 header {
-    padding: .5rem 2%;
-    background-color: #ddd;
-}
-header h1 {margin: 0;}
-header h2 {margin: 0; font-weight: normal;}
+    display: grid;
+    grid-template-columns: 51px auto 44px;
+    padding: .5rem 2vw;
+    background-color: rgb(248, 245, 245);
+    align-items: center;    
+    h1 {
+        
+        font-size: 1.6rem;
+        font-weight: $lightWeight;
+        padding-left: 4rem;
+        color: $primaryColor;
+    }
+    div#phone {display:none;}
+}// end header
 
+figure.logo {
+    width: 100px;
+    margin: 0 0 0 $gutter;
+    float: left;
+    margin: 0;    
+  }
+  figure.logo img {
+    width: 100px;
+    margin-bottom: 10%;
+
+  }
 /*----------- NAVIGATION --------------*/
+div#navWrapper {grid-row-start: 4;}
+div#hamburger a, div#closex a {
+    display: block;
+    padding: .8rem 2vw;
+    font-size: 1.5rem;
+    color: black;
+    text-decoration: none;
+    text-align: right;
+}//end nav buttons
+div#closex a {margin-right: 2vw;}
 nav {
-    background-color: #666;
+    height:110vh;
+    
 }
 nav ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
+    border-bottom: 1px solid #eee;
 }
-nav ul li {
-    float: left;
-    width: 25%;
-}
+nav ul li {list-style: none;   }
 nav ul li a {
     display: block;
-    background-color: #444;
-    color: #eee;
+    color: #333;
     border-left: 1px solid #777;
-    padding: .5rem 0;
+    padding: .9rem 2vw;
     text-decoration: none;
     font-size: .9rem;
-    text-align: center;
+    text-align: right;
+    
+    
 }
 nav ul li:first-child a {border-left: none;}
 
@@ -54,31 +82,18 @@ nav ul li.active a {
     color: #fff;
 }
 /*----------- MAIN --------------*/
+div#mainWrapper {grid-row-start: 2;}
 main {
-    padding: 0 2%;
+    padding: 0 2vw;
     min-height: 10rem;
 }
-
-div.social {
-    background-color: black;
-    display:flex;
-    padding: 1rem 0;
-}
-div.social a {
-    flex-basis: 25%;
-    text-align: center;
-    color: white;
-    font-size: 3rem;
-    text-decoration: none;
-}
-div.social a:hover{color:orange;}
 
 
 /*-----------COLUMNS--------------*/
 div.flexed {display:flex; 
     flex-wrap: wrap;}
     //end parent
-.column {padding: 0 $gutter;}
+.column {padding: 1rem  2vw;}
 @for $i from 1 through 12 {
     $w:($i / 12) * 100%;
     .small-#{$i} {flex-basis: $w;}
@@ -89,9 +104,135 @@ div.flexed {display:flex;
     color: white;
     p{font-size:200%; padding: 2rem 0;}
 }
+
+//cards
+.card-deck {
+    display: flex;
+    flex-wrap: wrap;
+}
+.cards {
+    display: grid; 
+    margin: 0 2vw;
+    grid-template-rows: auto;
+    grid-template-columns: 1fr 1fr;        
+        span{
+            display: block;
+            text-align: left;
+            font-size: .8rem;
+        }
+}
+.card{
+    
+    flex-basis:100%;
+    border: 1px solid rgb(216, 209, 209);
+    border-radius:  10px;
+    margin: .2rem .2rem;
+    text-align: center;
+    section {
+        background-color: #444;
+        color: #eee;
+        padding: .2rem;
+        border-top-left-radius: 5px;
+        border-top-right-radius:5px;
+    }//end of card
+    img {
+        width: 200px;
+        height: 250px;
+        padding: 0;
+    }//end of image
+    a {
+        display: block;
+        background-color: crimson;
+        color: white;
+        padding: 1rem 0;
+        margin: 1rem 4vw;
+        border-radius: 5px;
+    }
+    a:hover{background-color: lighten(crimson, 10%);}
+}//end of section
+
+.allButtons {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 1rem 5rem;
+}
+button {
+       
+        background-color: rgb(80, 74, 74);
+        border-radius: 10px;
+        border: 4px double #cccccc;
+        color: #eeeeee;
+        text-align: center;
+        font-size: 28px;
+        padding: 20px;
+        width: 200px;
+        -webkit-transition: all 0.5s;
+        -moz-transition: all 0.5s;
+        -o-transition: all 0.5s;
+        transition: all 0.5s;
+        cursor: pointer;
+        margin: 5px;    
+}
+
+.card-blogs {
+    display: flex;
+    flex-wrap: wrap;
+}
+.blog{
+    display: grid; 
+    grid-template-rows: auto;
+    grid-template-columns: 1fr;
+    flex-basis:100%;
+    border: 1px solid rgb(216, 209, 209);
+    margin: .5rem .5rem;
+    text-align: center;
+    section {
+        background-color: rgb(126, 125, 125);
+        color: #eee;
+        padding: .5rem;
+        font-size: larger;
+    }//end of card
+
+    img {
+        width: 300px;
+        height: 350px;
+        padding: 0;
+    }//end of image
+    a {
+        display: block;
+        background-color: navy;
+        color: white;
+        padding: .5rem 0;
+        
+    }
+    a:hover{background-color: lighten(crimson, 10%);}
+}//end of section
+
+
+
+div.parent {
+    display: none;
+}
 /*----------- FOOTER --------------*/
+#footerWrapper {background-color: #1b1b1b;
+    grid-row-start: 3; }
 footer {
-    background-color: #ddd;
+    color: white;
+    div.social {
+       
+        display:flex;
+        padding: 1rem 0;
+    }
+    div.social a {
+        flex-basis: 25%;
+        text-align: center;
+        color: white;
+        font-size: 3rem;
+        text-decoration: none;
+    }
+    div.social a:hover{color:orange;}
+    
     padding: .5rem 2%;
     text-align: center;
 }

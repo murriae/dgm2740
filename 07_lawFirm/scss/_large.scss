@@ -1,5 +1,5 @@
 header, nav, main, footer {
-        max-width: 64rem;
+        max-width: 75rem;
         margin:auto;
 }
 
@@ -13,9 +13,40 @@ header, nav, main, footer {
 
 /*----------- NAVIGATION --------------*/
 
-
+nav ul li a {
+        padding: .2rem 1rem;
+        border-radius: 10px;
+        margin: .5rem 0;
+    }//end anchor
 
 /*----------- MAIN --------------*/
+div.parent {
+    display: grid; 
+    grid-template-rows: auto;
+    
+    span{
+        display: block;
+        text-align: left;
+        font-size: .8rem;
+    }
+  .one{grid-column:1/ span 2;}
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr ;
+    .one{
+        grid-column: 1 / span 3;
+        grid-row: 1 / span 2;
+    }
+ 
+  .one, .sub1, .sub2, .sub3 {
+    background-color: grey;
+    border: 1px solid white;
+  }
+}
+
+div.blogger {
+    display: grid; 
+    grid-template-rows: auto;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
 /*----------- COLUMN --------------*/
 @for $i from 1 through 12 {
         $w:($i/12) * 100%;
