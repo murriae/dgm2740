@@ -148,7 +148,7 @@ main {
     margin: 0;   
   }
   figure.myphoto img {
-    width: 100%;
+    width: 100%
   }
   figure.mypic {
     width: 50%;
@@ -161,7 +161,13 @@ main {
   }
   figure.mypic figcaption {
     text-align: center;
-    font-size: 1.4rem;
+    font-size: 1rem;
+  }
+  figure.mypics img {
+      width: 400px;
+  
+    
+  
   }
 } //end main
 
