@@ -7,6 +7,7 @@ html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
 
 /*----------- BODY --------------*/
 body {
+    display: grid;
     font-size: 16px;
     font-family: Verdana, sans-serif;
 }
@@ -43,6 +44,7 @@ figure.logo {
   }
 /*----------- NAVIGATION --------------*/
 div#navWrapper {grid-row-start: 4;}
+
 div#hamburger a, div#closex a {
     display: block;
     padding: .8rem 2vw;
@@ -51,6 +53,7 @@ div#hamburger a, div#closex a {
     text-decoration: none;
     text-align: right;
 }//end nav buttons
+
 div#closex a {margin-right: 2vw;}
 nav {
     height:110vh;
@@ -68,8 +71,6 @@ nav ul li a {
     text-decoration: none;
     font-size: .9rem;
     text-align: right;
-    
-    
 }
 nav ul li:first-child a {border-left: none;}
 
@@ -84,16 +85,15 @@ nav ul li.active a {
 /*----------- MAIN --------------*/
 div#mainWrapper {grid-row-start: 2;}
 main {
-    padding: 0 2vw;
+    padding: 0;
     min-height: 10rem;
 }
 
 
 /*-----------COLUMNS--------------*/
-div.flexed {display:flex; 
-    flex-wrap: wrap;}
+div.flexed {display:flex; flex-wrap: wrap;}
     //end parent
-.column {padding: 1rem  2vw;}
+.column {padding:0;}
 @for $i from 1 through 12 {
     $w:($i / 12) * 100%;
     .small-#{$i} {flex-basis: $w;}
@@ -110,41 +110,29 @@ div.flexed {display:flex;
     display: flex;
     flex-wrap: wrap;
 }
-.cards {
-    display: grid; 
-    margin: 0 2vw;
-    grid-template-rows: auto;
-    grid-template-columns: 1fr 1fr;        
-        span{
-            display: block;
-            text-align: left;
-            font-size: .8rem;
-        }
-}
+
 .card{
-    
     flex-basis:100%;
     border: 1px solid rgb(216, 209, 209);
     border-radius:  10px;
-    margin: .2rem .2rem;
+    margin:0;
     text-align: center;
     section {
         background-color: #444;
         color: #eee;
-        padding: .2rem;
         border-top-left-radius: 5px;
         border-top-right-radius:5px;
     }//end of card
     img {
-        width: 200px;
-        height: 250px;
+        width: 175px;
+        height: 200px;
         padding: 0;
     }//end of image
     a {
         display: block;
         background-color: crimson;
         color: white;
-        padding: 1rem 0;
+        padding: .4rem 0;
         margin: 1rem 4vw;
         border-radius: 5px;
     }
@@ -155,7 +143,8 @@ div.flexed {display:flex;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    padding: 1rem 5rem;
+    padding: 1rem 0 5rem 8rem;
+    
 }
 button {
        

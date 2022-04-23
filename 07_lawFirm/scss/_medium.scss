@@ -67,14 +67,10 @@ div#footerWrapper {
 }
 
 /*----------- MAIN --------------*/
-.cards {
-  display: grid; 
-  grid-template-rows: auto;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-}
+
 /*----------- COLUMN --------------*/
 @for $i from 1 through 12 {
-  $w: ($i/12) * 100%;
+  $w: ( $i / 12) * 100%;
   .medium-#{$i} {
     flex-basis: $w;
   }
