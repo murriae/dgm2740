@@ -50,8 +50,8 @@ header {
 
 .header img {
   float: left;
-  width: 100px;
-  height: 25px;
+  width: 100%;
+  height: auto;
   background: #555;
 }
 
@@ -164,10 +164,8 @@ main {
     font-size: 1rem;
   }
   figure.mypics img {
-      width: 400px;
-  
-    
-  
+      width: 100%;
+      height: auto;  
   }
 } //end main
 
