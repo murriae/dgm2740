@@ -1,61 +1,218 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Philadelphia City</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="screen"
+      href="css/styles.css"
+    />
+    <script
+      src="https://kit.fontawesome.com/f9c9f462e1.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Spline+Sans:wght@300;500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+    />
+  </head>
 
-<head>
-	<meta charset="utf-8"/>
-	<title>Philadelphia City</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1"/>
-	<link rel="stylesheet" type="text/css" media="screen" href="css/styles.css"/>
-
-<!-- Google Font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Spline+Sans:wght@300;500&display=swap" rel="stylesheet">
-
-</head>
-
-<body>
-<div id="headerWrapper">
-	<header id="header-background">
+  <body>
+    <div id="headerWrapper">
+      <header id="header-background">
         <h1>Philadelphia City</h1>
         <h2>Where America Was Born</h2>
-        
-		
-	</header>
-</div><!-- end header wrapper -->
-<div id="navWrapper">
-    <nav>
+      </header>
+    </div>
+    <!-- end header wrapper -->
+    <div id="navWrapper">
+      <nav>
         <button id="hamburgerBtn">
-            <span class="line top"></span>
-            <span class="line middle"></span>
-            <span class="line bottom"></span>
+          <span class="line top"></span>
+          <span class="line middle"></span>
+          <span class="line bottom"></span>
         </button>
         <ul id="primaryNav">
-        <li  class="active"><a href="#">Visit</a></li>
-        <li><a href="#">Departments</a></li>
-        <li ><a href="#">Services</a></li>
-        <li><a href="#">Pay Bills</a></li>
-        <li><a href="#">Meetings</a></li>
-        <li><a href="#">Help</a></li>
-    </ul>
-    </nav>
-</div> <!-- end nav wrapper -->
-
-
-
+          <li class="parent active">
+            <a href="#">Visit</a>
+            <ul>
+              <li><a href="#">Landfill</a></li>
+              <li><a href="#">Police</a></li>
+              <li><a href="#">Parks and Rec</a></li>
+            </ul>
+          </li>
+          <li class="parent"><a href="#">Departments</a>
+        <ul>
+            <li><a href="#">Police</a></li>
+              <li><a href="#">Library</a></li>
+              <li><a href="#">City Planning</a></li>
+        </ul>
+    </li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Pay Bills</a></li>
+          <li><a href="#">Meetings</a></li>
+          <li class="parent"><a href="#">Help</a>
+        <ul>
+            <li><a href="#">Customer Service</a></li>
+              <li><a href="#">Contact Us</a></li>
+              <li><a href="#">Frequently Asked Questions</a></li>
+        </ul></li>
+        </ul>
+      </nav>
+    </div>
+    <!-- end nav wrapper -->
+    <!--PAGE CONTENT GOES HERE-->
     <main>
-        
-        
-        
+      <!--Slider main container-->
+      <div class="swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <picture>
+              <source
+                srcset="images/artsmall.jpg"
+                media="(max-width:28.12rem)"
+              />
+              <source srcset="images/artbig.jpg" media="(min-width:28.12rem)" />
+              <img src="images/art.jpg" alt="slide" />
+            </picture>
+            <p>
+              The Philadelphia Museum of Art is an art museum originally
+              chartered in 1876 for the Centennial Exposition in Philadelphia.
+              The main museum building was completed in 1928 on Fairmount, a
+              hill located at the northwest end of the Benjamin Franklin Parkway
+              at Eakins Oval.
+            </p>
+          </div>
+          <div class="swiper-slide">
+            <picture>
+              <source
+                srcset="images/rockysmall.jpg"
+                media="(max-width:28.12rem)"
+              />
+              <source srcset="images/rocky.jpg" media="(min-width:28.12rem)" />
+              <img src="images/rocky.jpg" alt="slide" />
+            </picture>
+            <p>
+              Massive landmark statue of fictional boxer Rocky Balboa &
+              well-known picture spot.
+            </p>
+          </div>
+          <div class="swiper-slide">
+            <picture>
+              <source
+                srcset="images/independencesmall.jpg"
+                media="(max-width:28.12rem)"
+              />
+              <source
+                srcset="images/independence.jpg"
+                media="(min-width:28.12rem)"
+              />
+              <img src="images/independence.jpg" alt="slide" />
+            </picture>
+            <p>
+              Independence Hall is a historic civic building in Philadelphia,
+              Pennsylvania in which both the United States Declaration of
+              Independence and the United States Constitution were debated and
+              adopted by America's Founding Fathers.
+            </p>
+          </div>
+          <div class="swiper-slide">
+            <picture>
+              <source
+                srcset="images/riversmall.jpg"
+                media="(max-width:28.12rem)"
+              />
+              <source srcset="images/river.jpg" media="(min-width:28.12rem)" />
+              <img src="images/river.jpg" alt="slide" />
+            </picture>
+            <p>
+              The Schuylkill River is a river running northwest to southeast in
+              eastern Pennsylvania, which was improved by navigations into the
+              Schuylkill Canal. Several of its tributaries drain major parts of
+              the center-southern and easternmost Coal Regions in the state.
+            </p>
+          </div>
+          <div class="swiper-slide">
+            <picture>
+              <source
+                srcset="images/libertysmall.jpg"
+                media="(max-width:28.12rem)"
+              />
+              <source
+                srcset="images/libertybell.jpg"
+                media="(min-width:28.12rem)"
+              />
+              <img src="images/libertybell copy.jpg" alt="slide" />
+            </picture>
+            <p>
+              The Liberty Bell, previously called the State House Bell or Old
+              State House Bell, is an iconic symbol of American independence,
+              located in Philadelphia, Pennsylvania.
+            </p>
+          </div>
+        </div>
+      </div>
 
-
+      <!--Cards-->
+      <h1>Plan Your Visit</h1>
+      <div class="flexed">
+        <div class="cards">
+          <div class="column small-6 medium-3 place">
+            <a
+              href="https://www.nps.gov/inde/learn/historyculture/stories-libertybell.htm"
+            >
+              <i class="fa-solid fa-bell fa-5x"></i>
+              <h3>Liberty Bell</h3>
+            </a>
+          </div>
+          <div class="column small-6 medium-3 place">
+            <a
+              href="https://www.nps.gov/inde/learn/historyculture/stories-libertybell.htm"
+            >
+              <i class="fa-solid fa-bell fa-5x"></i>
+              <h3>Independence Hall</h3>
+            </a>
+          </div>
+          <div class="column small-6 medium-3 place">
+            <a
+              href="https://www.nps.gov/inde/learn/historyculture/stories-libertybell.htm"
+            >
+              <i class="fa-solid fa-bell fa-5x"></i>
+              <h3>Philadelphia Museum of Art</h3>
+            </a>
+          </div>
+          <div class="column small-6 medium-3 place">
+            <a
+              href="https://www.nps.gov/inde/learn/historyculture/stories-libertybell.htm"
+            >
+              <i class="fa-solid fa-bell fa-5x"></i>
+              <h3>Schuylkill River</h3>
+            </a>
+          </div>
+        </div>
+        <!--end cards-->
+      </div>
     </main>
 
-    <footer>      
-    <p>Copyright &copy; 2022 Philadelphia Inc. All rights reserved. 
-        <a href="#">Privacy Policy</a> | <a href="#">Terms of Use</a> | <a href="#">Sales</a> | <a href="#">Clients</a></p>
+    <footer>
+      <p>
+        Copyright &copy; 2022 Philadelphia Inc. All rights reserved.
+        
+      </p>
     </footer>
- <!-- end footer wrapper -->
-   <script src="js/script.js"></script>
-</body>
-</html> 
+    <!-- end footer wrapper -->
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="js/script.js"></script>
+    <!-- Slider main container -->
+  </body>
+</html>

@@ -8,6 +8,20 @@ main {
 }
 
 /* NAVIGATION STUFF GOES HERE  */
+nav ul li a {
+    font-size: .9rem;
+    padding: .5rem 1.2rem;
+
+}
+
+/*----------- COLUMN --------------*/
+@for $i from 1 through 12 {
+    $w: ( $i / 12) * 100%;
+    .large-#{$i} {
+      flex-basis: $w;
+    }
+  } //end loop
+
 div.parent {
     grid-template-columns: 1fr 1fr 1fr 1fr;
     .one{
