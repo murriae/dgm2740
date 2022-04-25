@@ -142,7 +142,22 @@ main {
     margin:0; 
     padding-top: .5rem;
   }
-
+  picture.photoA{
+    display:block;
+    width: 96%;
+    margin: 0 2%;
+  }
+  picture.photoA img, picture.photoB img {width: 100%;}
+  picture.photoA div, picture.photoB div {
+    text-align:center;
+    font-weight: 500;
+  }
+  picture.photoB {
+    display: block;
+    float: right;
+    width: 46%;
+    margin: 0 2%;
+  }
   figure.myphoto {
     width: 100%;
     margin: 0;   
