@@ -1,0 +1,29 @@
+header, nav {
+    max-width: 1240px;
+    margin: auto;
+}
+main {
+    max-width: 80rem;
+    margin: auto;
+}
+
+/* NAVIGATION STUFF GOES HERE  */
+div.parent {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    .one{
+        grid-column: 1 / span 3;
+        grid-row: 1 / span 2;
+    }
+}
+div.footer {
+    display: grid; 
+    margin: 0 2vw;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    h1, p {
+        color: rgb(250, 244, 244);
+        text-align: left;
+        font-size: 1rem;
+        padding: .5rem; 
+    }
+}

@@ -112,7 +112,7 @@ div.flexed {display:flex; flex-wrap: wrap;}
 }
 
 .card{
-    flex-basis:100%;
+    
     border: 1px solid rgb(216, 209, 209);
     border-radius:  10px;
     margin:0;
@@ -124,8 +124,8 @@ div.flexed {display:flex; flex-wrap: wrap;}
         border-top-right-radius:5px;
     }//end of card
     img {
-        width: 175px;
-        height: 200px;
+        width: 100%;
+        height: auto;
         padding: 0;
     }//end of image
     a {
