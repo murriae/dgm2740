@@ -13,17 +13,46 @@ div#headerWrapper {
 
 
 /*----------- NAVIGATION --------------*/
-    nav ul {margin-left: 2%;}
-    nav ul li {width: auto;}
-    nav ul li:first-child a {border-left: 1px solid #777;}
-    nav ul li:last-child a {border-right: 1px solid #777;}
-    nav ul li a{padding: .5rem 1rem;}
-
+nav button {display:none;}
+#primaryNav {display:flex;}
+nav ul {
+    margin-left: 2%;
+    list-style:none;
+  }
+  nav ul li {
+    width: auto;
+  }
+  nav ul li:first-child a {
+    border-left: 1px solid #777;
+  }
+  nav ul li:last-child a {
+    border-right: 1px solid #777;
+  }
+  nav ul li a {
+    padding: 0.5rem 1rem;
+  }
+  
+  
+  nav {
+    height: auto;
+    ul {
+      display: flex;
+      justify-content: end;
+      border: none;
+    }
+  } //end nav
 
 /*----------- MAIN --------------*/
 
 main {
     .card{flex-basis:48%;}
 }
+/*----------- COLUMN --------------*/
+@for $i from 1 through 12 {
+    $w: ( $i / 12) * 100%;
+    .medium-#{$i} {
+      flex-basis: $w;
+    }
+  } //end loop
 /*----------- FOOTER --------------*/
     
