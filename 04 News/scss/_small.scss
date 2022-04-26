@@ -87,43 +87,60 @@ nav button {
 
 /*----------- MAIN --------------*/
 main {
-    padding: 0 2%;
-    min-height: 10rem;
-/*-----------COLUMNS--------------*/
-div.flexed {display:flex; flex-wrap: wrap;}
-    //end parent
-.column {padding:0;}
-@for $i from 1 through 12 {
-    $w:($i / 12) * 100%;
-    .small-#{$i} {flex-basis: $w;}
-}//end loop
+    p {padding: .5rem 2vw; color: #333; line-height: 125%;}
+	h1 {
+        padding: 1rem 2vw .5rem 2vw; 
+        font-size: 1.5rem; 
+        color: $secondaryColor;
+        font-weight: $lightWeight
+    }
 
-.card-blogs {
-    display: flex;
-    flex-wrap: wrap;
+
     
-}
-.blog{
-    border-radius:  10px;
+
+div.blogger {
     display: grid; 
-    grid-template-rows: auto;
+    margin: 0 2vw;
     grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    span{
+        display: block;
+        text-align: center;
+        font-size: .8rem;
+    }
+    .sub,.one {
+        padding:.5rem 2vw;
+    }
+  .sub img, .one img {width:100%; }
+  .one{grid-column:1/ span 2;}
+
+}
+.blog {
+    border-radius:  10px;
     flex-basis:100%;
     border: 1px solid rgb(216, 209, 209);
-    margin:0;
     text-align: center;
     
+        
     section {
         border-radius:  10px;
         background-color: rgb(126, 125, 125);
         color: #eee;
-        padding: .5rem;
+      
         font-size: larger;
+        padding:.5rem 2vw;
     }//end of card
-    i {
-        margin: 1rem;
+    img {
+        width: 100px;
+        height: 200px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        padding: .5rem;
     }
-    
+    p {
+        margin-left: .5rem;
+    }
     a {
         border-radius:  10px;
         display: block;
@@ -133,41 +150,7 @@ div.flexed {display:flex; flex-wrap: wrap;}
         
     }
     a:hover{background-color: lighten(crimson, 10%);}
-}//end of section
-
-    div.test {
-        width: 3rem;
-        border: 1px solid black;
-        text-align: center;
-        position: relative;
-        animation: button 5s 2;
-    }//end test 
-    @keyframes button {
-        0% {left: 0px;}
-        100% {left: 200px;}
-    }//end keyframes
-    figure img.rotate{
-        position: relative;
-        animation: mymoves 5s 1;
-    }
-    @keyframes mymoves {
-        0% {transform:rotate(0deg);}
-        100% {transform:rotate(360deg);}
-    }
-
-    figure img.forge{
-        position: relative;
-        animation: forge 5s 1;
-    }
-    @keyframes forge {
-        0% {left:0px;transform:rotate(0deg);}
-        45% {left:100%; transform:roate(0deg);}
-        55%{left: 100%; transform: rotate(180deg);}
-        100% {left: 0%;transform:rotate(180deg);}
-    }
-}
-
-
+    }}
 
 /*----------- FOOTER --------------*/
 footer {

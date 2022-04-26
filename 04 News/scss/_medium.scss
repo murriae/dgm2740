@@ -44,15 +44,12 @@ nav ul {
 
 /*----------- MAIN --------------*/
 
-main {
-    .card{flex-basis:48%;}
+
+div.blogger {
+  grid-template-columns: 1fr 1fr;
+
 }
-/*----------- COLUMN --------------*/
-@for $i from 1 through 12 {
-    $w: ( $i / 12) * 100%;
-    .medium-#{$i} {
-      flex-basis: $w;
-    }
-  } //end loop
+
+
 /*----------- FOOTER --------------*/
     
