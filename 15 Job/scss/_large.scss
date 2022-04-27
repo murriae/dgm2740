@@ -8,24 +8,17 @@ main {
 }
 
 /* NAVIGATION STUFF GOES HERE  */
-nav ul li a {
-    font-size: .9rem;
-    padding: .5rem 1.2rem;
-
+nav {
+    display: flex;
+    justify-items: right;
+    padding-left: 51.2rem;
 }
-
-/*----------- COLUMN --------------*/
-@for $i from 1 through 12 {
-    $w: ( $i / 12) * 100%;
-    .large-#{$i} {
-      flex-basis: $w;
+div.parent {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    .one{
+        grid-column: 1 / span 3;
+        grid-row: 1 / span 2;
     }
-  } //end loop
-
-  div.parent {
-    grid-template-columns: 1fr 1fr 1fr;
-span{font-size: 1rem;}
-.one{grid-column: 1 / span 3;}
 }
 div.footer {
     display: grid; 

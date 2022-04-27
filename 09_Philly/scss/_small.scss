@@ -142,11 +142,26 @@ main {
     .small-#{$i} {flex-basis: $w;}
 }//end loop
 
-    div.cards{
+    div.parent{
          padding: 1rem;
         margin-top: 1rem;
+        display: grid; 
+    margin: 0 2vw;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    span{
+        display: block;
+        text-align: center;
+        font-size: .8rem;
+    }
+    .sub,.one {
+        padding:.5rem 2vw;
+    }
+  .sub img, .one img {width:100%; }
+  .one{grid-column:1/ span 2;}
         
-        div:nth-child(1) {background-image:url("../images/libertysmall.jpg")}
+        div:nth-child(1) {background-image:url("../images/libertysmall.jpg")
+        }
         div:nth-child(2) {background-image:url("../images/independencesmall.jpg")}
         div:nth-child(3) {background-image:url("../images/artsmall.jpg")}
         div:nth-child(4) {background-image:url("../images/riversmall.jpg")}
@@ -193,23 +208,7 @@ main {
 } // end main
 
 
-div.parent {
-    display: grid; 
-    margin: 0 2vw;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto;
-    span{
-        display: block;
-        text-align: center;
-        font-size: .8rem;
-    }
-    .sub,.one {
-        padding:.5rem 2vw;
-    }
-  .sub img, .one img {width:100%; }
-  .one{grid-column:1/ span 2;}
 
-}
 div.footer {
     display: grid; 
     margin: 0 2vw;

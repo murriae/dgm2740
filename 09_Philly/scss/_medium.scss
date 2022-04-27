@@ -38,6 +38,9 @@ ul li:hover ul {
 }
 li.active a {background-color: rgba(0,0,0,0.2)}
 
+div.parent {
+    grid-template-columns: 1fr 1fr;
+}
 /*----------- COLUMN --------------*/
 @for $i from 1 through 12 {
     $w: ( $i / 12) * 100%;
