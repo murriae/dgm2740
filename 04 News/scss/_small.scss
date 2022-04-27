@@ -89,15 +89,17 @@ nav button {
 main {
     p {padding: .5rem 2vw; color: #333; line-height: 125%;}
 	
-div.blogger {
+
+    
+.blog {
     display: grid; 
-    margin: 0 2vw;
+    margin: 1rem;
     grid-template-columns: 1fr;
     grid-template-rows: auto;
-}
-.blog {
+
+
     border-radius:  10px;
-    flex-basis:100%;
+    flex-basis: 98%;
     border: 1px solid rgb(216, 209, 209);
     text-align: center;
     
@@ -129,8 +131,8 @@ div.blogger {
         
     }
     a:hover{background-color: lighten(crimson, 10%);}
-    }}
-
+    }
+}
 /*----------- FOOTER --------------*/
 footer {
     background-color: rgb(44, 99, 218);
