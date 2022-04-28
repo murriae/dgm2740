@@ -15,7 +15,12 @@ div#pageWrapper {
 
 
 /*----------- HEADER --------------*/
-
+header {
+    img {
+        width: 150px;
+        height: auto;
+    }
+}
 
 
 /*----------- NAVIGATION --------------*/
@@ -24,8 +29,12 @@ div#pageWrapper {
 
 
 /*----------- MAIN --------------*/
+main {
+
+
 h1 {
-    padding: 1rem;
+    font-size: 35px;
+}
 }
 div.parent {
   

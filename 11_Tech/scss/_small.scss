@@ -23,13 +23,15 @@ body {
 /*----------- HEADER --------------*/
 header {
     grid-area: header;
-    padding: .5rem 2%;
+    padding: .5rem 5%;
     background-color: white;
     h1 {margin: 0;}
     h2 {margin: 0; font-weight: normal;}
+    
     img {
-        width: 150px;
+        width: 100px;
         height: auto;
+        
     }
 }
 
@@ -97,17 +99,30 @@ main {
     min-height: 10rem;
     background-color: #ebe994;
     
-
-    div.parent {
+    h1 {
+        display: grid;
+        margin-left: .5rem;
         display: grid; 
-        margin: 1rem;
+        margin-left:.5rem;
+        margin-right: .5rem;
         grid-template-columns: 1fr;
         grid-template-rows: auto;
         flex-basis: 98%;
-       
         text-align: left;
-        
-        
+        font-size: 20px;
+    }
+    div.parent {
+        display: grid; 
+        margin-left:.5rem;
+        margin-right: .5rem;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        flex-basis: 98%;
+        text-align: left;
+        h2 {
+            font-size: 18px;
+        }
+        p {font-size:12px;}
         img {
             margin:.5rem;
             width: 300px;
