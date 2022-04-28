@@ -1,0 +1,138 @@
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+
+/*----------- apply a natural box layout model to all elements --------------*/
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+div#pageWrapper {
+    display: grid;
+    grid-template-areas:
+    "hamburger"
+    "header"
+    "content"
+    "footer"
+    "navigation";
+}
+/*----------- BODY --------------*/
+body {
+    font-size: 16px;
+    font-family: Verdana, sans-serif;
+}
+
+
+/*----------- HEADER --------------*/
+header {
+    grid-area: header;
+    padding: .5rem 2%;
+    background-color: white;
+    h1 {margin: 0;}
+    h2 {margin: 0; font-weight: normal;}
+    img {
+        width: 150px;
+        height: auto;
+    }
+}
+
+
+
+/*----------- NAVIGATION --------------*/
+a.myjump{
+    display: block;
+    width: 60px;
+    color: rgba(0,0,0,0.7);
+    font-size: 1.7rem;
+    padding: .4rem;
+    text-decoration: none;
+    padding-left: 2%;
+}
+
+nav {
+    grid-area: navigation;
+    background-color: #b8ddff;
+    height: 100vh;
+}
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+nav ul li {
+    flex-basis: 100%;
+    
+}
+nav ul li a {
+    display: block;
+    background-color: rgba(0,0,0,0.2);
+    color: #fff;
+    padding: .5rem 0;
+    text-decoration: none;
+    font-size: .9rem;
+    text-align: center;
+}
+
+
+nav ul li a:hover {
+    background-color: rgba(255,255,255,0.4);
+    color: #000;
+}
+nav ul li.active a {
+    background-color: rgba(0,0,0,0.6);
+    color: #fff;
+}
+
+
+/*----------- HAMBURGER --------------*/
+div#hamburger {
+    grid-area: hamburger;
+    background-color: #feff98; 
+}
+
+
+/*----------- MAIN --------------*/
+main {
+    grid-area: content;
+    padding: 0;
+    min-height: 10rem;
+    background-color: #ebe994;
+    
+
+    div.parent {
+        display: grid; 
+        margin: 1rem;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        flex-basis: 98%;
+       
+        text-align: left;
+        
+        
+        img {
+            margin:.5rem;
+            width: 300px;
+            height: auto;
+        }
+        
+        
+    }
+}
+
+
+/*----------- FOOTER --------------*/
+footer {
+    grid-area: footer;
+    background-color: #2698b4;
+    padding: .5rem 2%;
+    text-align: center;
+    color: white;
+}
+
+
+
+/*----- Clearfix: Force an Element not to collapse -----*/
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
