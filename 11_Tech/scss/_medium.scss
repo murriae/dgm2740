@@ -37,13 +37,14 @@ h1 {
 }
 }
 div.parent {
-  
+
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: auto;
     flex-basis: 48%;
     .blog1 {grid-column: 1 / span 2; grid-row:1;
      }
+     
      .bloga {
         grid-column: 3; grid-row:1;
      }
