@@ -6,25 +6,22 @@
 <meta name="author" content="John Doe">
 
 <!-- This start file was build by Paul Cheney  -->
-<title>HTML5 Start Site by Paul Cheney</title>
+<title>Weather Information</title>
 
 <!-- TELLS PHONES NOT TO LIE ABOUT THEIR WIDTH & stops the font from enlarging when a phone is turned sideways-->
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
 
 
-
 <!-- STYLE SHEETS -->
 <link href="css/styles.css" rel="stylesheet">
-
-
 
      
 </head>
 <body>
 <!-- HEADER HERE -->
 	<header>
- 		<h1>Company Name Here</h1>
+ 		<h1>Weather Information</h1>
         <h2>Possible Slogan or Tagline</h2>
     </header>
     
@@ -42,9 +39,13 @@
     
 <!-- CONTENT HERE -->
     <main>
-        <h1>Products</h1>
-       <div id="myCards">
-       </div>
+        <h1>Weather Channel</h1>
+        <h2>Weather Conditions for <span id="place">city</span></h2>
+        <p>Current Temperature is <span id="currentTemp">00</span>&deg;</p>
+        <p>Current Wind Speed is <span id="windSpeed">xx</span>mph</p>
+        <img id="weather_icon" src="//openweathermap.org/img/w/" + iconcode + ".png" alt="current weather">
+
+        
     </main>
     
 <!-- FOOTER HERE -->   

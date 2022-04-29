@@ -1,0 +1,45 @@
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+
+/*----------- apply a natural box layout model to all elements --------------*/
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+
+/*----------- BODY --------------*/
+body {
+    font-size: 16px;
+    font-family: Verdana, sans-serif;
+}
+
+/*----------- MAIN --------------*/
+
+.weatherDay {
+    border:1px solid gray;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 20px;
+    background-color:lightblue;
+    box-shadow: 5px 10px 4px -1px rgba(0,0,0,0.34);
+}
+.weatherDay img {
+    float:right;
+}
+.weatherDay p {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.weatherDay h2,.weatherDay h3 {
+    margin-top:5px;
+    margin-bottom: 5px;
+}
+
+
+/*----------- FOOTER --------------*/
+footer {
+    background-color: #ddd;
+    padding: .5rem 2%;
+    text-align: center;
+}
+
+
+
