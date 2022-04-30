@@ -23,6 +23,7 @@ body {
 }
 .weatherDay img {
     float:right;
+    
 }
 .weatherDay p {
     margin-top: 5px;
@@ -33,7 +34,33 @@ body {
     margin-bottom: 5px;
 }
 
-
+      body {
+        font-family: "Be Vietnam Pro", sans-serif;
+        font-family: "Quicksand", sans-serif;
+      }
+      .weatherDay {
+        border: 1px solid gray;
+        border-radius: 10px;
+        padding: 10px;
+        margin-bottom: 20px;
+        background-color: lightblue;
+        box-shadow: 5px 10px 4px -1px rgba(0, 0, 0, 0.34);
+        color: black;
+      }
+      .weatherDay img {
+        float: right;
+      }
+      .weatherDay p {
+        margin-top: 5px;
+        margin-bottom: 5px;
+      }
+      .weatherDay h2,
+      .weatherDay h3 {
+        margin-top: 5px;
+        margin-bottom: 5px;
+      }
+     
+     
 /*----------- FOOTER --------------*/
 footer {
     background-color: #ddd;

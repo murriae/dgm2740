@@ -13,37 +13,18 @@
       name="viewport"
       content="width=device-width, initial-scale=1, maximum-scale=1"
     />
-<style >
-    body {
-        font-family:'Courier New', Courier, monospace;
-    }
-    .weatherDay {
-    border:1px solid gray;
-    border-radius: 10px;
-    padding: 10px;
-    margin-bottom: 20px;
-    background-color:lightblue;
-    box-shadow: 5px 10px 4px -1px rgba(0,0,0,0.34);
-}
-.weatherDay img {
-    float:right;
-}
-.weatherDay p {
-    margin-top: 5px;
-    margin-bottom: 5px;
-}
-.weatherDay h2,.weatherDay h3 {
-    margin-top:5px;
-    margin-bottom: 5px;
-}
-
-</style>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,700;0,800;1,100;1,200;1,300;1,700&family=Quicksand:wght@300;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- STYLE SHEETS -->
+<link href="css/styles.css" rel="stylesheet">
   </head>
   <body>
     <!-- HEADER HERE -->
-      <h1>Weather Information</h1>
-    
-
+    <h1>Weather Information for Philadelphia</h1>
     <div id="forecast">
       <script>
         let gotPosition = function (pos) {
@@ -53,63 +34,100 @@
           getForecast(lat, long);
         };
 
-        let getForecast = function (lat, long) {
+        let getForecast = function(lat, long) {
           let url =
-            "//api.openweathermap.org/data/2.5/onecall?lat=" + lat + "&lon=" + long + "&exclude=current,minutely,hourly&appid=583f4d9c72b13f531cf6a2b4e843ab69";
-            getWeatherText(url);
+            "http://api.openweathermap.org/data/2.5/onecall?lat=" +
+            lat +
+            "&lon=" +
+            long +
+            "&exclude=current,minutely,hourly&appid=583f4d9c72b13f531cf6a2b4e843ab69";
+          getWeatherText(url);
         };
         async function getWeatherText(url) {
-            let weatherObject = await fectch(url);
-            let weatherText = await weatherObject.text();
-            parseWeather(weatherText);
+          let weatherObject = await fetch(url);
+          let weatherText = await weatherObject.text();
+          parseWeather(weatherText);
         }
         let parseWeather = function(weatherText) {
-            let weatherJSON = JSON.parse(weatherText);
-            let dailyForecast = weatherJSON.daily;
-            for (x=0; x < dailyForecast.length; x++) {
-                let today = new Date().getDay() + x;
-                if (today > 6) {
-                    today = today-7;
-                }
-                let dayOfWeek = getDayOfWeek(today);
-                let description = day.weather[0].description;
-                let icon = day.weather[0].icon;
-                let sunrise = timestampToTime(day.sunrise);
-                let sunset = timestampToTime(day.sunset);
-                let highTemp= kToF(day.temp.max);
-                let lowTemp = kToF(day.temp.min);
-                let humidity = day.humidity;
-                let windSpeed = day.wind_speed;
-                let windGust = day.wind_gust;
-                displayWeatherDay(dayOfWeek, description, icon, sunrise, sunset, highTemp, lowTemp, humidity, windSpeed, windGust)
+          let weatherJSON = JSON.parse(weatherText);
+          console.log(weatherJSON);
+          let dailyForecast = weatherJSON.daily;
+          for (x = 0; x < dailyForecast.length; x++) {
+            let day = dailyForecast[x];
+            let today = new Date().getDay() + x;
+            if (today > 6) {
+              today = today - 7;
             }
+            let dayOfWeek = getDayOfWeek(today);
+            let description = day.weather[0].description;
+            let icon = day.weather[0].icon;
+            //let sunrise = timestampToTime(day.sunrise);
+            //let sunset = timestampToTime(day.sunset);
+            //let highTemp = kToF(day.temp.max);
+            //let lowTemp = kToF(day.temp.min);
+            let humidity = day.humidity;
+            let windSpeed = day.wind_speed;
+            let windGust = day.wind_gust;
+            displayWeatherDay(
+              dayOfWeek,
+              description,
+              icon,
+              //sunrise,
+              //sunset,
+              //highTemp,
+              //lowTemp,
+              humidity,
+              windSpeed,
+              windGust
+            );
+          }
         }
-        let displayWeatherDay = function(dayOfWeek, description, icon, sunrise, sunset, highTemp, lowTemp, humidity, windSpeed, windGust) {
-            let out = "<div class='weatherDay'><img src='//openweathermap.org/img/wn/" + icon + ".png/>";
-                out += "<h2>" + dayOfWeek + "</h2>";
-                out += "<h3>" + descirption + "</h3>";
-                out += "<p>Sunrise: " + sunrise + "</p>";
-                out += "<p>Sunset: " + sunset + "</p>";
-                out += "<p>High: " + highTemp + "F</p>";
-                out += "<p>Low: " + lowTemp + "F</p>";
-                out += "<p>Humidity: " + humidity + "%</p>";
-                out += "<p>Wind Speed: " + Math.round(windSpeed) + " with gusts up to " 
-                    + Math.round(windGust) + "</p></div>";
-                document.getElementById("forecast").innerHTML += out;
+        let displayWeatherDay = function (
+          dayOfWeek,
+          description,
+          icon,
+          sunrise,
+          sunset,
+          highTemp,
+          lowTemp,
+          humidity,
+          windSpeed,
+          windGust
+        ) {
+          let out =
+            "<div class='weatherDay'><img src='http://openweathermap.org/img/wn/" +
+            icon +
+            ".png'/>";
+          out += "<h2>" + dayOfWeek + "</h2>";
+          out += "<h3>" + description + "</h3>";
+          out += "<p>Sunrise: " + sunrise + "</p>";
+          out += "<p>Sunset: " + sunset + "</p>";
+          out += "<p>High: " + highTemp + "F</p>";
+          out += "<p>Low: " + lowTemp + "F</p>";
+          out += "<p>Humidity: " + humidity + "%</p>";
+          out +=
+            "<p>Wind Speed: " +
+            Math.round(windSpeed) +
+            " with gusts up to " +
+            Math.round(windGust) +
+            "</p></div>";
+        
+          document.getElementById("forecast").innerHTML += out;
+        };
+        let getDayOfWeek = function (dayNum) {
+          var weekday = new Array(7);
+          weekday[0] = "Sunday";
+          weekday[1] = "Monday";
+          weekday[2] = "Tuesday";
+          weekday[3] = "Wednesday";
+          weekday[4] = "Thursday";
+          weekday[5] = "Friday";
+          weekday[6] = "Saturday";
+          return (weekday[dayNum]);
         }
 
-        let getDayOfWeek = function(dayNum) {
-            var weekday = new Array(7);
-            weekday[0] = "Sunday";
-            weekday[1] = "Monday";
-            weekday[2] = "Tuesday";
-            weekday[3] = "Wednesday";
-            weekday[4] = "Thursday";
-            weekday[5] = "Friday";
-            weekday[6] = "Saturday";
-        }
+        navigator.geolocation.getCurrentPosition(gotPosition);
       </script>
     </div>
-    
   </body>
 </html>
