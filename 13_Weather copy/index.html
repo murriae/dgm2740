@@ -36,7 +36,7 @@
 
         let getForecast = function(lat, long) {
           let url =
-            "http://api.openweathermap.org/data/2.5/onecall?lat=" +
+            "//api.openweathermap.org/data/2.5/onecall?lat=" +
             lat +
             "&lon=" +
             long +
@@ -95,22 +95,23 @@
           windGust
         ) {
           let out =
-            "<div class='weatherDay'><img src='http://openweathermap.org/img/wn/" +
-            icon +
-            ".png'/>";
-          out += "<h2>" + dayOfWeek + "</h2>";
+            "<div class='weatherDay'><h2>" + dayOfWeek + "</h2>";
           out += "<h3>" + description + "</h3>";
           out += "<p>Sunrise: " + sunrise + "</p>";
           out += "<p>Sunset: " + sunset + "</p>";
-          out += "<p>High: " + highTemp + "F</p>";
-          out += "<p>Low: " + lowTemp + "F</p>";
-          out += "<p>Humidity: " + humidity + "%</p>";
-          out +=
+          out += "<img src='//openweathermap.org/img/wn/" +
+            icon +
+            ".png'/>";
+          //out += "<p>High: " + highTemp + "F</p>";
+          //out += "<p>Low: " + lowTemp + "F</p>";
+          //out += "<p>Humidity: " + humidity + "%</p>";
+          /*out +=
             "<p>Wind Speed: " +
             Math.round(windSpeed) +
             " with gusts up to " +
             Math.round(windGust) +
-            "</p></div>";
+            "</p>*/
+            "</div>";
         
           document.getElementById("forecast").innerHTML += out;
         };
