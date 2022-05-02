@@ -38,8 +38,9 @@
           const apiURL =
           "//api.openweathermap.org/data/2.5/forecast?zip=19019,us&appid=583f4d9c72b13f531cf6a2b4e843ab69";
         //};
-        Fetch(apiURL)
-        
+        fetch(apiURL)
+        .then(response => response.json())
+  .then((data) => console.log(data));
        
         async function getWeatherText(url) {
           let weatherObject = await fetch(url);
@@ -124,7 +125,6 @@
           weekday[6] = "Saturday";
           return (weekday[dayNum]);
         }
-
         //navigator.geolocation.getCurrentPosition(gotPosition);
       </script>
     </div>
