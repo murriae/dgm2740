@@ -15,9 +15,11 @@ fetch(apiURL)
     let myCaptionTag = document.createElement("figcaption");
     myCaptionTag.textContent = myList[i].name;
      //end caption
+     
     let myFigureTag = document.createElement("figure");
     myFigureTag.appendChild(myImageTag);
     myFigureTag.appendChild(myCaptionTag);
+    
       //pic and caption combo
     let myAddressTag = document.createElement("address");
     myAddressTag.textContent = myList[i].address;
@@ -26,9 +28,14 @@ fetch(apiURL)
     let myPhoneTag = document.createElement("phone");
     myPhoneTag.textContent = myList[i].phone;
     // phone
+    let iconCar = document.createElement("img");iconCar.src="images/car.png";iconCar.alt="car";
+    let iconPhone = document.createElement("img");iconPhone.src="images/phone.png";iconPhone.alt="phone";
     let myInfoTag = document.createElement("p");
+    myInfoTag.appendChild(iconCar);
+    myInfoTag.appendChild(iconPhone);
     myInfoTag.appendChild(myAddressTag);
     myInfoTag.appendChild(myPhoneTag);
+    
     /*let myCarTag = document.createElement('icon');
     myCarTag.setAttribute("class", "sourceText fa-solid fa-car");
     $(myCarTag.sourceText).append('<i class="fa-solid fa-car"></i>");*/
