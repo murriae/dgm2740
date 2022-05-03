@@ -104,6 +104,42 @@ nav {
 main {
     padding: 0 2%;
     min-height: 10rem;
+    p {
+      padding: 0.5rem 2vw;
+      color: #333;
+      line-height: 125%;
+    }
+    /* slider*/
+    .swiper-wrapper {
+      margin-bottom: 25px;
+    }
+    .swiper {
+      width: 100%;
+      height: auto;
+      img {
+        width: 100%;
+        display: block;
+      }
+      p {
+        margin: 0;
+        padding: 0.4rem 2vw;
+        position: absolute;
+        transform: translateY(-100%);
+        background-color: rgba(0, 0, 0, 0.5);
+        text-align: center;
+        color: white;
+        width: 100%;
+      }
+      b {
+        font-weight: 500;
+      }
+    } // end swiper
+    h1 {
+      padding: 1rem 2vw 0.5rem 2vw;
+      font-size: 1.5rem;
+      color: $secondaryColor;
+      font-weight: $lightWeight;
+    }
 }
 /*-- Form style--*/
 

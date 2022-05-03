@@ -6,11 +6,7 @@
 <meta name="author" content="John Doe">
 
 <!-- This start file was build by Paul Cheney  -->
-<title>HTML5 Start Site by Paul Cheney</title>
-
-<!-- TELLS PHONES NOT TO LIE ABOUT THEIR WIDTH & stops the font from enlarging when a phone is turned sideways-->
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-
+<title>Swag Shop</title>
 <!-- Google Font -->
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -18,6 +14,11 @@
   href="https://fonts.googleapis.com/css2?family=Spline+Sans:wght@300;500&display=swap"
   rel="stylesheet"
 />
+<!-- TELLS PHONES NOT TO LIE ABOUT THEIR WIDTH & stops the font from enlarging when a phone is turned sideways-->
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+
+
 
 <!-- STYLE SHEETS -->
 <link href="css/styles.css" rel="stylesheet">
@@ -34,33 +35,31 @@
             srcset="images/logo0-assets/logo1.png 1x, images/logo0-assets/logo2.png 2x,
             images/logo0-assets/logo3.png 3x">
             </figure>
+            
+    <div class="header">
  <h1>Holly's Food Favorites:)</h1>
-        
+</div>
+
     </header>
     
     
 <!-- NAVIGATION HERE -->
-    <nav class="clearfix">
-        <ul >
+<div id="navWrapper">
+    <nav>
+        <button id="hamburgerBtn">
+            <span class="line top"></span>
+            <span class="line middle"></span>
+            <span class="line bottom"></span>
+        </button>
+        <ul id="primaryNav">
             <li><a href="index.html">Home</a></li>
             <li ><a href="form.html">Sign Up</a></li>
-            <li><a href="recipes.html">Recipes</a></li>
-            <li><a href="contact.html">Contact</a></li>
-            <li class="active"><a href="thanks.html">Thanks</a></li>   
+            <li class="active"><a href="#">Recipes</a></li>
+            <li><a href="#">Contact</a></li>    
         </ul>
     </nav>
+</div> 
     
-    
-<!-- CONTENT HERE -->
-    <main>
-        <h1>Holly's Food Favs</h1>
-        <p>Thank you for your order. You will receive a confirmation email shortly.</p>
-    </main>
-    
-<!-- FOOTER HERE -->   
-    <footer>
-        &copy; 2022 &bull; Abby Murri &bull; 123-555-6789 &bull; Login
-    </footer>
-
-</body>
-</html>
+<main>
+    <h1>Recipes</h1>
+</main>
