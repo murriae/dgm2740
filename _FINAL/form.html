@@ -6,7 +6,7 @@
 <meta name="author" content="John Doe">
 
 <!-- This start file was build by Paul Cheney  -->
-<title>Swag Shop</title>
+<title>Holly's Food Favorites</title>
 <!-- Google Font -->
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -29,18 +29,12 @@
 </head>
 <body>
 <!-- HEADER HERE -->
-	<header>
-        <figure class="logo">
-            <img  src="images/logo0-assets/logo1.png" alt="logo"
-            srcset="images/logo0-assets/logo1.png 1x, images/logo0-assets/logo2.png 2x,
-            images/logo0-assets/logo3.png 3x">
-            </figure>
-            
-    <div class="header">
- <h1>Holly's Food Favorites:)</h1>
-</div>
-
-    </header>
+<header>
+    <h1><img  src="images/logo0-assets/logo1.png" alt="logo"
+        srcset="images/logo0-assets/logo1.png 1x, images/logo0-assets/logo2.png 2x,
+        images/logo0-assets/logo3.png 3x"/>
+        Holly's Food Favorites:)</h1>
+</header>
     
     
 <!-- NAVIGATION HERE -->
@@ -63,20 +57,28 @@
     
 <!-- CONTENT HERE -->
     <main>
-        <h1>Swag Shop</h1>
+        <h1>Join the HZM Club</h1>
         <form method="get" action="thanks.html">
             <fieldset>
-                <legend>Customer Information</legend>
+                <legend>Club Member Information</legend>
                 <label class="top">Full Name*<input type="text" name="fname" required></label>
                 <label class="top">Phone<input type="tel" name="phone" placeholder="1235551234"></label>
                 <label class="top">Email*<input type="email" name="email" placeholder="someone@gmail.com" required></label>
             </fieldset>
         
             <fieldset>
-                <legend>Swag Information</legend>
+                <legend>HZM Shirt Info</legend>
                 <label class="top">Date Needed<input type="date" name="date"></label>
-                <label class="top">Business Name<input type="text" name="business"></label>
-                <label class="top">Business URL<input type="url" name="url" placeholder="http://"></label>
+                
+                <label class="top">Size<select name="color">
+                    <option value="">Please Select</option>
+                    <option value="XS">XS</option>
+                    <option value="S">S</option>
+                    <option value="M">M</option>
+                    <option value="L">L</option>
+                    <option value="XL">XL</option>
+                    </select>
+                </label>
                 <label class="top">Color<select name="color">
                     <option value="">Please Select</option>
                     <option value="white">White</option>
@@ -84,11 +86,11 @@
                     <option value="green">Green</option>
                     <option value="blue">Blue</option>
                     <option value="yellow">Yellow</option>
+                    </select>
                 </label>
-                <label>Quantity<input type="number" name="quantity" placeholder="1-1000"></label>
                 <div>Material</div>
-                <label class="sbs"><input type="radio" name="audience" value="Aluminum">Aluminum</label>
-                <label class="sbs"><input type="radio" name="audience" value="Plastic">Pastic</label>
+                <label class="sbs"><input type="radio" name="audience" value="Synthetic">Synthetic</label>
+                <label class="sbs"><input type="radio" name="audience" value="Cotton">Cotton</label>
             </fieldset>
             <fieldset>
                 <legend>Payment Information</legend>
@@ -102,9 +104,9 @@
     </main>
     
 <!-- FOOTER HERE -->   
-    <footer>
-        &copy; 2022 &bull; Abby Murri &bull; 123-555-6789 &bull; Login
-    </footer>
+<footer>
+    &copy; 2022 &bull; Holly's Food Favs &bull; 801-523-2396
+</footer>
  <!-- end footer wrapper -->
  <script src="js/script.js"></script>
 </body>

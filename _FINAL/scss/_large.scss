@@ -45,7 +45,11 @@ li.active a {background-color: rgba(0,0,0,0.2)}
 }
 
 /*----------- MAIN --------------*/
-
+div#blogger {
+    display: grid; 
+    grid-template-rows: auto;
+    grid-template-columns: 1fr 1fr;
+}
 
 
 /*----------- FOOTER --------------*/

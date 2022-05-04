@@ -20,8 +20,18 @@
 
 
 /*----------- MAIN --------------*/
+div#blogger {
+    display: grid; 
+    grid-template-rows: auto;
+    grid-template-columns: 1fr 1fr;
+    address {
+        text-align: center;
+    }
+}
 
-
+.blog1 {
+    grid-column: 1 / span 2;
+}
 
 /*----------- FOOTER --------------*/
     
