@@ -113,8 +113,9 @@ main {
     color: #333;
     line-height: 125%;
   }
-  /* slider*/
-  .swiper-wrapper {
+
+   /* slider*/
+   .swiper-wrapper {
     margin-bottom: 25px;
   }
   .swiper {
@@ -138,6 +139,7 @@ main {
       font-weight: 500;
     }
   } // end swiper
+
   h1 {
     padding: 1rem 2vw 0.5rem 2vw;
     font-size: 2rem;
@@ -150,8 +152,8 @@ main {
     font-weight: 600;
     
   }
-
 } // end main
+
 /*-- Form style--*/
 
 form fieldset {
