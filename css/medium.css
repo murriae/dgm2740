@@ -1,0 +1,5 @@
+/*----------- Sample Media Query --------------*/
+@media only screen and (min-width: 30rem) {
+    main p {color: green;}
+} /* end of media query */
+
