@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="description" content="Fill Me In">
+<meta name="author" content="John Doe">
+
+<!-- This start file was build by Paul Cheney  -->
+<title>Holly's Food Favorites</title>
+<!-- Google Font -->
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link
+  href="https://fonts.googleapis.com/css2?family=Spline+Sans:wght@300;500&display=swap"
+  rel="stylesheet"
+/>
+<!-- TELLS PHONES NOT TO LIE ABOUT THEIR WIDTH & stops the font from enlarging when a phone is turned sideways-->
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+
+
+
+<!-- STYLE SHEETS -->
+<link href="css/styles.css" rel="stylesheet">
+
+
+
+     
+</head>
+<body>
+<!-- HEADER HERE -->
+<header>
+    <h1><img  src="images/logo0-assets/logo1.png" alt="logo"
+        srcset="images/logo0-assets/logo1.png 1x, images/logo0-assets/logo2.png 2x,
+        images/logo0-assets/logo3.png 3x"/>
+        Holly's Food Favorites:)</h1>
+</header>
+    
+    
+<!-- NAVIGATION HERE -->
+<div id="navWrapper">
+    <nav>
+        <button id="hamburgerBtn">
+            <span class="line top"></span>
+            <span class="line middle"></span>
+            <span class="line bottom"></span>
+        </button>
+        <ul id="primaryNav">
+            <li class="active"><a href="index.html">Home</a></li>
+            <li ><a href="form.html">Sign Up</a></li>
+            <li><a href="recipes.html">Recipes</a></li>
+            <li><a href="contact.html">Contact</a></li>    
+        </ul>
+    </nav>
+</div> 
+    
+    
+<!-- CONTENT HERE -->
+    <main>
+        <h1>Join the HZM Club</h1>
+        <form method="get" action="thanks.html">
+            <fieldset>
+                <legend>Club Member Information</legend>
+                <label class="top">Full Name*<input type="text" name="fname" required></label>
+                <label class="top">Phone<input type="tel" name="phone" placeholder="1235551234"></label>
+                <label class="top">Email*<input type="email" name="email" placeholder="someone@gmail.com" required></label>
+            </fieldset>
+        
+            <fieldset>
+                <legend>HZM Shirt Info</legend>
+                <label class="top">Date Needed<input type="date" name="date"></label>
+                
+                <label class="top">Size<select name="color">
+                    <option value="">Please Select</option>
+                    <option value="XS">XS</option>
+                    <option value="S">S</option>
+                    <option value="M">M</option>
+                    <option value="L">L</option>
+                    <option value="XL">XL</option>
+                    </select>
+                </label>
+                <label class="top">Color<select name="color">
+                    <option value="">Please Select</option>
+                    <option value="white">White</option>
+                    <option value="purple">Purple</option>
+                    <option value="green">Green</option>
+                    <option value="blue">Blue</option>
+                    <option value="yellow">Yellow</option>
+                    </select>
+                </label>
+                <div>Material</div>
+                <label class="sbs"><input type="radio" name="audience" value="Synthetic">Synthetic</label>
+                <label class="sbs"><input type="radio" name="audience" value="Cotton">Cotton</label>
+            </fieldset>
+            <fieldset>
+                <legend>Payment Information</legend>
+                <label class="top">Name on Card*<input type="text" name="card" required></label>
+                <label class="top">Card Number*<input type="text" name="business" placeholder="000 0000 0000" required></label>
+                <label class="top">Expiration Date*<input type="date" name="expire" placeholder="DD/MM/YYYY" required></label>
+                
+            </fieldset>
+            <input class="submitBtn" type="submit" value="Order My Swag">
+        </form>
+    </main>
+    
+<!-- FOOTER HERE -->   
+<footer>
+    &copy; 2022 &bull; Holly's Food Favs &bull; 801-523-2396
+</footer>
+ <!-- end footer wrapper -->
+ <script src="js/script.js"></script>
+</body>
+</html>
